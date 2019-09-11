@@ -1,0 +1,549 @@
+<header> 
+  <div>
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark pink ie-nav"  [containerInside]="false">
+  <mdb-navbar-brand>
+      <a class="logo navbar-brand" href="/main-page"><strong>STNL</strong></a>
+  </mdb-navbar-brand>
+  <links style="font-family: 'Source Sans Pro', serif;">
+      <ul class="navbar-nav mr-auto" style="font-family: 'Source Sans Pro', serif;">
+        
+          <li class="nav-item active waves-light" mdbWavesEffect>
+              <a class="nav-link" routerLink="/main-page">Home <span class="sr-only"></span></a>
+          </li> 
+          <li class="nav-item waves-light" mdbWavesEffect> 
+            <a class="nav-link" mdbPageScroll href="#about"> About</a> 
+
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              Products<span class="caret"></span></a>
+              <div *dropdownMenu class="dropdown-menu dropdown dropdown-default" role="menu">
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Cupcakes</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Macaroons</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Ice Cream</a> 
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Vegan Choices</a> 
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Cake</a>
+              </div>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link">Order</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link">Custom Design</a>
+          </li> 
+          <li class="nav-item waves-light" mdbWavesEffect> 
+            <a class="nav-link">Blog<span class="sr-only">(current)</span></a>  
+          </li> 
+
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link"><mdb-icon fab icon="facebook-f"></mdb-icon></a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link"><mdb-icon fab icon="twitter"></mdb-icon></a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link"><mdb-icon fab icon="instagram"></mdb-icon></a>
+          </li>
+
+          
+      </ul>
+
+      <mdb-icon fas icon="shopping-cart"></mdb-icon>
+      <button type="button" mdbBtn class="relative waves-light" (click)="basicModal.show()">Cart</button> 
+      <div mdbModal #basicModal="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true"> 
+       <div class="modal-dialog modal-side modal-top-right" role="document"> 
+           <div class="modal-content"> 
+           <div class="modal-header">  
+               <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()"> 
+                       <span aria-hidden="true">×</span>
+               </button> 
+               <h4 class="modal-title"> Your Cart</h4>
+                </div>
+                <!--./modal-header-->
+                <div class="modal-body"> 
+
+                   ...
+                </div> 
+                <!--./modal-body--> 
+
+                <div class="modal-footer"> 
+                       <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Not Ready Yet</button>
+                       <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Check Out</button>
+
+                </div> 
+                <!--./modal-footer-->
+                
+           </div>
+           <!--./modal-content-->
+       </div>
+
+      </div> 
+  </links>
+</mdb-navbar> 
+<!--./Navbar-->   
+
+</div> 
+
+<div> 
+  <!--Section: page-view-->
+  <section class="page-view"> 
+      <h2 class="h1-responsive font-weight-bold text-center">Hello Friends!</h2>
+  </section> 
+  <!--./Section: page-view-->
+</div>
+
+</header>
+<div class="blog-content">  
+
+<div> 
+<!-- Section: Blog v.1 -->
+<section class="">
+
+    <!-- Section heading --> 
+    <div class="section-heading">
+    <!-- Section description -->
+    <h3 class="text-center w-responsive mx-auto font-weight-bold mb-5">Thanks for stopping by...</h3> 
+   <p class="text-center w-responsive mx-auto mb-5 "> Have a suggestion? Want to Contribute? <br> Simply message us with the content & once reviewed your post will be published!</p> 
+   <div class="contribute-btn">
+   <button type="button" color="pink"class="text-center" (click)="thisModal.show()" mdbBtn> I have a post</button>
+   <div mdbModal #thisModal="mdbModal" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="ThisModalLabel" aria-hidden="true"> 
+      <div class="modal-dialog modal-dialog-centered" role="document"> 
+          <div class="modal-content"> 
+          <div class="modal-header">  
+              <button type="button" class="close pull-right" aria-label="Close" (click)="thisModal.hide()"> 
+                      <span aria-hidden="true">×</span>
+              </button> 
+              <h4 class="modal-title w-100"> Contribute!</h4>
+               </div>
+               <!--./modal-header-->
+               <div class="modal-body"> 
+Form/info for customer to submit
+                  ...
+               </div> 
+               <!--./modal-body--> 
+
+               <div class="modal-footer"> 
+                      <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Cancel</button>
+                      <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Submit</button>
+
+               </div> 
+               <!--./modal-footer-->
+               
+          </div>
+          <!--./modal-content-->
+      </div>
+
+     </div> 
+
+  </div>
+  </div>  
+
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+          <img class="img-fluid" src="./assets/img/blogimg1.jpeg" alt="Cupcake Spread">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-7">
+  
+        <!-- Category -->
+       <!--  <a href="#!" class="green-text">
+          <h6 class="font-weight-bold mb-3"><mdb-icon fas icon="utensils" class="pr-2"></mdb-icon>Food</h6>
+        </a>-->
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3"><strong>Healthy Cupcakes!?</strong></h3>
+        <!-- Excerpt -->
+        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+          placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.</p>
+        <!-- Post data -->
+        <p>by <a><strong>Carine Fox</strong></a>, 19/08/2018</p>
+        <!-- Read more button --> 
+      <button type="button" mdbBtn color="pink" onclick="alert()"> Read More
+      </button>
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row -->
+  
+    <hr class="my-5">
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-7">
+  
+        <!-- Category -->
+       
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3"><strong>Pay Made Easy</strong></h3>
+        <!-- Excerpt -->
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+          deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+          provident.</p>
+        <!-- Post data -->
+        <p>by <a><strong>Carine Fox</strong></a>, 14/08/2018</p>
+        <!-- Read more button -->
+        <a mdbBtn color="pink" onclick="alert()" mdbWavesEffect class="mb-lg-0 mb-4">Read more</a>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+          <img class="img-fluid" src="./assets/img/blogimg9.jpeg" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row -->
+  
+    <hr class="my-5">
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+          <img class="img-fluid" src="./assets/img/blogimg10.jpeg" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-7">
+  
+        <!-- Category -->
+      
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3"><strong>Someone Say Macaroons?</strong></h3>
+        <!-- Excerpt -->
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+          magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia sit amet.</p>
+        <!-- Post data -->
+        <p>by <a><strong>Carine Fox</strong></a>, 11/08/2018</p>
+        <!-- Read more button -->
+        <a mdbBtn color="indigo" onclick="alert()" mdbWavesEffect>Read more</a>
+  
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row -->
+
+
+    
+    <hr class="my-5">
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-7">
+  
+        <!-- Category -->
+       
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3"><strong>Importance Of Appreciation</strong></h3>
+        <!-- Excerpt -->
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+          deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+          provident.</p>
+        <!-- Post data -->
+        <p>by <a><strong>Carine Fox</strong></a>, 14/08/2018</p>
+        <!-- Read more button -->
+        <a mdbBtn color="pink" mdbWavesEffect class="mb-lg-0 mb-4">Read more</a>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+          <img class="img-fluid" src="./assets/img/blogimg2.jpeg" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row --> 
+
+
+    <hr class="my-5">
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+          <img class="img-fluid" src="./assets/img/doughnutblog1.jpeg" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-7">
+  
+        <!-- Category -->
+       
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3"><strong>Title of the news</strong></h3>
+        <!-- Excerpt -->
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+          magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia sit amet.</p>
+        <!-- Post data -->
+        <p>by <a><strong>Carine Fox</strong></a>, 11/08/2018</p>
+        <!-- Read more button -->
+        <a mdbBtn color="indigo" onclick="alert()" mdbWavesEffect>Read more</a>
+  
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row --> 
+
+
+    <hr class="my-5">
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-7">
+  
+        <!-- Category -->
+      
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3"><strong>Pay Made Easy</strong></h3>
+        <!-- Excerpt -->
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+          deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+          provident.</p>
+        <!-- Post data -->
+        <p>by <a><strong>Carine Fox</strong></a>, 14/08/2018</p>
+        <!-- Read more button -->
+        <a mdbBtn color="pink" onclick="alert()" mdbWavesEffect class="mb-lg-0 mb-4">Read more</a>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+          <img class="img-fluid" src="./assets/img/cupcakeblog1.jpeg" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row -->  
+
+
+    <hr class="my-5">
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+          <img class="img-fluid" src="./assets/img/doughnutblog1.jpeg" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-7">
+  
+        <!-- Category -->
+       
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3"><strong>The 50 best Cupcake Recipes</strong></h3>
+        <!-- Excerpt -->
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+          magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia sit amet.</p>
+        <!-- Post data -->
+        <p>by <a><strong>Carine Fox</strong></a>, 11/08/2018</p>
+        <!-- Read more button -->
+        <a mdbBtn color="indigo" mdbWavesEffect>Read more</a>
+  
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row -->  
+
+
+    <hr class="my-5">
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-7">
+  
+        <!-- Category -->
+       
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3"><strong>Always Shine in the Morning</strong></h3>
+        <!-- Excerpt -->
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+          deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+          provident.</p>
+        <!-- Post data -->
+        <p>by <a><strong>Carine Fox</strong></a>, 14/08/2018</p>
+        <!-- Read more button -->
+        <a mdbBtn color="pink" mdbWavesEffect class="mb-lg-0 mb-4">Read more</a>
+  
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-5">
+  
+        <!-- Featured image -->
+        <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+          <img class="img-fluid" src="./assets/img/dougnutblog3.jpeg" alt="Sample image">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+      <!-- Grid column -->
+  
+    </div>
+    <!-- Grid row -->  
+
+  
+  
+  </section>
+  <!-- Section: Blog v.1 --> 
+
+</div> 
+<!--./blog-content--> 
+
+
+    <!--Footer-->
+    <footer class="page-footer font-small pt-4" style="font-family:'Source Sans Pro', serif;">
+        <h6 class="text-uppercase font-weight-bold mb-4">#SweeterthingsnLife</h6>
+                <!--Footer Links (1)--> 
+                <div class="container text-center text-md-left">   
+                    <h6 class="text-uppercase mb-4 font-weight-bold">footer links</h6>
+        
+                    <!--Footer Links (2)--> 
+                    <div class="row text-center text-md-left mt-3 pb-3"> 
+                        <h6 class="text-uppercase mb-4 font-weight-bold">footer links</h6> 
+        
+                        <!--Grid column (1)-->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">  
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Title</h6>
+        
+                        </div>
+                        <!--Closing tag for grid column (1)--> 
+        
+                        <hr class="w-100 clearfix d-md-none"> 
+        
+                        <!--Grid column (2)--> 
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">   
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+        
+                        </div> 
+                        <!--Closing tag for grid column (2)--> 
+                    
+        
+                    </div> 
+                    <!--Closing tag for footer links 2--> 
+        
+                    <!--Grid row (1)--> 
+                    <div class="row d-flex align-items-center"> 
+                    
+                        <!--Grid column (5)--> 
+                        <div col-md-7 col-lg-8> 
+                            <p class="text-center text-md-left"> Copyright</p> 
+        
+                        </div> 
+                        <!--Closing tag of grid column (5)--> 
+        
+                        <!--Grid column (6)-->
+                        <div>  
+        
+                            <!--Social Buttons--> 
+                            <div> 
+        
+                            </div>
+        
+                        </div> 
+                        <!--Closing tag for grid column (6)-->
+                         
+        
+                    </div> 
+                    <!--Closing tag for grid row (1)-->
+        
+        
+                </div>
+                <!--Closing tag for footer links 1--> 
+        
+        
+            </footer>
+         
+          </div>
+          <!--End of container-->
+        
+  

@@ -1,0 +1,35 @@
+*{padding:0; margin:0;}
+
+.blog-content{background:#f8bbd0;} 
+
+.page-view{background-color:#f8bbd0; 
+    padding-top:10px; 
+    padding-right:10px;} 
+
+    .section-heading{height:50vh; 
+    background-color: #BED3A2; 
+    padding:10px;
+    margin:10px;} 
+
+    .contribute-btn{display: flex;
+    justify-content: center;}
+
+    .view{background:#E5E2DA;}
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent;
+  } 
+
+  .navbar .navbar-brand img {
+    height: 40px;
+    margin: 10px;
+  }
+
+  .dropdown-menu {
+    left: unset !important;
+    right: 0 ;
+  }
+
+  footer{ 
+    background: #BED3A2; 
+  } 

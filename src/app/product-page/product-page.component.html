@@ -1,0 +1,93 @@
+<p>product-page works!</p>
+<div> 
+
+    
+
+        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark pink ie-nav"  [containerInside]="false">
+          <mdb-navbar-brand>
+              <a class="logo navbar-brand" href="/main-page"><strong>STNL</strong></a>
+          </mdb-navbar-brand>
+          <links style="font-family: 'Source Sans Pro', serif;">
+              <ul class="navbar-nav mr-auto" style="font-family: 'Source Sans Pro', serif;">
+                
+                  <li class="nav-item active waves-light" mdbWavesEffect>
+                      <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                  </li> 
+                  <li class="nav-item waves-light" mdbWavesEffect> 
+                    <a class="nav-link" mdbPageScroll href="#about"> About</a> 
+      
+                  </li>
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown" dropdown>
+                      <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                      Products<span class="caret"></span></a>
+                      <div *dropdownMenu class="dropdown-menu dropdown dropdown-default" role="menu">
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Cupcakes</a>
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Macaroons</a>
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Ice Cream</a> 
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Vegan Choices</a> 
+                          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Cake</a>
+                      </div>
+                  </li>
+                  <li class="nav-item waves-light" mdbWavesEffect>
+                      <a class="nav-link" routerLink="/order">Order</a>
+                  </li>
+                  <li class="nav-item waves-light" mdbWavesEffect>
+                      <a class="nav-link">Custom Design</a>
+                  </li> 
+                  <li class="nav-item waves-light" mdbWavesEffect> 
+                    <a class="nav-link" routerLink="/blog">Blog</a>  
+                  </li> 
+      
+              </ul>
+              
+              <ul class="navbar-nav nav-flex-icons">
+                  <li class="nav-item waves-light" mdbWavesEffect>
+                      <a class="nav-link"><mdb-icon fab icon="facebook-f"></mdb-icon></a>
+                  </li>
+                  <li class="nav-item waves-light" mdbWavesEffect>
+                      <a class="nav-link"><mdb-icon fab icon="twitter"></mdb-icon></a>
+                  </li>
+                  <li class="nav-item waves-light" mdbWavesEffect>
+                      <a class="nav-link"><mdb-icon fab icon="instagram"></mdb-icon></a>
+                  </li>
+      
+                  
+              </ul> 
+              <mdb-icon fas icon="shopping-cart"></mdb-icon>
+              <button type="button" mdbBtn class="relative waves-light" (click)="basicModal.show()">Cart</button> 
+              <div mdbModal #basicModal="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true"> 
+               <div class="modal-dialog modal-side modal-top-right" role="document"> 
+                   <div class="modal-content"> 
+                   <div class="modal-healder">  
+                       <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()"> 
+                               <span aria-hidden="true">×</span>
+                       </button> 
+                       <h4 class="modal-title"> Your Cart</h4>
+                        </div>
+                        <!--./modal-header-->
+                        <div class="modal-body"> 
+      
+                           ...
+                        </div> 
+                        <!--./modal-body--> 
+      
+                        <div class="modal-footer"> 
+                               <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Not Ready Yet</button>
+                               <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Check Out</button>
+      
+                        </div> 
+                        <!--./modal-footer-->
+                        
+                   </div>
+                   <!--./modal-content-->
+               </div>
+      
+              </div> 
+      
+          </links>
+      </mdb-navbar>
+      
+              
+      
+            </div>
