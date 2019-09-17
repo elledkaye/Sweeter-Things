@@ -1,97 +1,67 @@
 
 <!-- Main navigation -->
 <header>      
-  <div> 
-  <div id="header-title">
-  <h2 class="text-uppercase">Sweeter things N Life</h2>
-</div>
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-primary ie-nav"  [containerInside]="false">
-    <mdb-navbar-brand>
-      <a class="logo navbar-brand" href="main-page"> Sweeter Things in life
-      </a> 
-      
-    </mdb-navbar-brand>
-
-    <links >
-        <ul class="navbar-nav mr-auto">
-          
-            <li class="nav-item active" >
-                <a class="nav-link" href="#">Home  <span class="sr-only">(current)</span></a>
-            </li>
-            <hr class="w-100 clearfix d-md-none"> 
-            
-            <!-- Dropdown -->
-            <li class="nav-item dropdown" dropdown>
-              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-              In Store Hours<span class="caret"></span></a>
-              <div *dropdownMenu class="dropdown-menu dropdown dropdown-default" role="menu">
-                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Monday - Thursday: 9:00AM - 9:30PM</a>
-                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Friday - Saturday: 8:30AM - 10:30PM</a>
-                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Sunday: 8:30AM - 7:00PM</a> 
-                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Delivery Times</a> 
-    
-              </div>
+    <div> 
+      <div id="header-title">
+        <h2 class="text-uppercase">Sweeter things N Life</h2>
+      </div>
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark-pink ie-nav"  [containerInside]="false">
+  <mdb-navbar-brand>
+    <a class="logo navbar-brand" href="main-page"> Sweeter Things in life
+    </a> 
+  </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active" >
+            <a class="nav-link" href="#">Home 
+              <span class="sr-only">(current)</span> 
+            </a>
           </li>
-
+          <hr class="w-100 clearfix d-md-none">
+            <!-- Dropdown -->
+           <li class="nav-item dropdown" dropdown>
+            <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              In Store Hours 
+              <span class="caret"></span></a>
+            <div *dropdownMenu class="dropdown-menu dropdown dropdown-default" role="menu">
+                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Monday - Thursday: 9:00AM - 9:30PM</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Friday - Saturday: 8:30AM - 10:30PM</a>
+                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Sunday: 8:30AM - 7:00PM</a> 
+                <a class="dropdown-item waves-light" mdbWavesEffect href="#">Delivery Times</a> 
+             </div>
+           </li>
+          <hr class="w-100 clearfix d-md-none"> 
+          <li class="nav-item waves-light" mdbWavesEffect> 
+            <a class="nav-link" mdbPageScroll href="#about"> About </a>
+          </li>
+            <hr class="w-100 clearfix d-md-none">    
+          <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link" routerLink="/order">Order</a>
+          </li>
             <hr class="w-100 clearfix d-md-none"> 
-
-            <li class="nav-item waves-light" mdbWavesEffect> 
-              <a class="nav-link" mdbPageScroll href="#about"> About </a>
-            </li>
-
-            <hr class="w-100 clearfix d-md-none"> 
-            
-
-            <li class="nav-item waves-light" mdbWavesEffect>
-                <a class="nav-link" routerLink="/order">Order</a>
+           <li class="nav-item waves-light" mdbWavesEffect>
+              <a class="nav-link">Custom Design</a>
             </li> 
-
             <hr class="w-100 clearfix d-md-none"> 
-
-            <li class="nav-item waves-light" mdbWavesEffect>
-                <a class="nav-link">Custom Design</a>
-            </li> 
-
-            <hr class="w-100 clearfix d-md-none"> 
-
-            <li class="nav-item waves-light" mdbWavesEffect> 
-              <a class="nav-link" routerLink="/blog">Blog</a>  
-            </li> 
-
-        </ul>
-        
-    <!-- <ul class="navbar-nav nav-flex-icons">
-            <li class="nav-item waves-light" mdbWavesEffect>
-                <a class="nav-link"><mdb-icon fab icon="facebook-f"></mdb-icon></a>
-            </li>
-            <li class="nav-item waves-light" mdbWavesEffect>
-                <a class="nav-link"><mdb-icon fab icon="twitter"></mdb-icon></a>
-            </li>
-            <li class="nav-item waves-light" mdbWavesEffect>
-                <a class="nav-link"><mdb-icon fab icon="instagram"></mdb-icon></a>
-            </li>
-
-            
-        </ul> -->
-
-        <mdb-icon fas icon="shopping-cart"></mdb-icon>
-        <button type="button" mdbBtn class="relative waves-light" (click)="basicModal.show()">Cart</button> 
-        <div mdbModal #basicModal="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true"> 
-         <div class="modal-dialog modal-side modal-top-right" role="document"> 
-             <div class="modal-content"> 
-             <div class="modal-healder">  
-                 <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()"> 
-                         <span aria-hidden="true">×</span>
-                 </button> 
-                 <h4 class="modal-title"> Your Cart</h4>
-                  </div>
+          <li class="nav-item waves-light" mdbWavesEffect> 
+            <a class="nav-link" routerLink="/blog">Blog</a>  
+          </li> 
+      </ul>
+      <button type="button" mdbBtn class="relative waves-light" (click)="basicModal.show()">Cart</button> 
+      <div mdbModal #basicModal="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true"> 
+        <div class="modal-dialog modal-side modal-top-right" role="document"> 
+          <div class="modal-content"> 
+            <div class="modal-healder">  
+                <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()"> 
+                  <span aria-hidden="true">×</span>
+                </button> 
+                <h4 class="modal-title"> Your Cart</h4>
+              </div>
                   <!--./modal-header-->
                   <div class="modal-body"> 
-
                      ...
                   </div> 
                   <!--./modal-body--> 
-
                   <div class="modal-footer"> 
                          <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Not Ready Yet</button>
                          <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Check Out</button>
@@ -111,40 +81,70 @@
 </mdb-navbar> 
 
 <!--Navbar-->  
-    </div>
-      
+    </div> 
+    <section id="view">  
+      <div>
+          <div id="imgCarousel" class="carousel slide" data-ride="carousel"  >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="./assets/img/pastry1.jpeg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/pastry1.jpeg" alt="Second slide">
+                </div>
+               
+              </div>
+            </div>
+         
+          </div>
+    </section>
         <!-- Intro -->
-        <section id="view"> 
-          
-              <mdb-carousel class="container-fluid" [isControls]="false" [animation]="'slide'">
-                  <mdb-carousel-item>
-                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+        <!--<section id="view">  
+          <div class="carousel-row container-fluid"> 
+            carousel row
+            <mdb-carousel class="container-fluid" [isControls]="false" [animation]="'slide'">
+                <div class="carousel-inner">  
+                  carousel inner
+              <mdb-carousel-item>
+                  <img class="d-block img-fluid" src="./assets/img/pastry1.jpeg" alt="First slide">
+                </mdb-carousel-item> 
+                <mdb-carousel-item>
+                  <img class="d-block img-fluid" src="/assets/img/pastry1.jpeg" alt="Second slide">
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                  <img class="d-block w-100" src="/assets/img/pastry1.jpeg" alt="Third slide">
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                    <img class="d-block w-100" src="/assets/img/pastry1.jpeg" alt="Third slide">
                   </mdb-carousel-item>
-                  <mdb-carousel-item>
-                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
-                  </mdb-carousel-item>
-                  <mdb-carousel-item>
-                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
-                  </mdb-carousel-item>
-                </mdb-carousel>
-            
-          <div class="row ">
-        
- 
-            <div class="col-md-6">
+                </div>
+              </mdb-carousel>
+          </div>
+          <div class="row "> 
+            row
+            <div class="col-md-6"> 
+                <div id="button-row" class="button-row"> 
+                  button-row
+                    <div id="button-div" class="mr-auto">
+                        <button type="button" id="button" mdbBtn color="pink" class="btn-margin text-uppercase" >Order Online
+                          <mdb-icon fas icon="angle-right"></mdb-icon></button>
+                  
+                
+                    </div>
+                  </div>
+               
       
                 <div class="d-flex flex-column justify-content-center h-100">
-                 <!--  <h1 class="heading display-3 font-weight-bold text-center"
-                     style="font-family: 'Questrial', sans-serif;">Sweeter Things 
-                      <span style="font-size:50px">N'</span> <br>
-                       <span style="text-align:center">Life</span>
-                       </h1>  -->
-             
+               
+
+                       <div>
                 <h2 class="font-weight-bold text-center"> Bake the world a better place</h2> 
-                <article class="text-center"> We offer various kinds of pastrys, we also offer vegan ad vegetarian friendly pastries</article>
+                <article class="text-center"> We offer various kinds of pastrys, 
+                   we also offer vegan ad vegetarian friendly pastries 
+                  </article>
 
              
-             
+             </div>
                 
                 </div>
       
@@ -155,10 +155,7 @@
               <div class="view">
                 
 
-            <!-- <img class="img-fluid rounded" src="./assets/img/cupcakespread1.jpeg" alt="cupcake">-->
-                 
-             
-                
+      
               </div>
       
             </div>
@@ -169,14 +166,7 @@
           </div> 
 
       
-<div id="button-row" class="row">
-          <div id="button-div" class="mr-auto">
-              <button type="button" id="button" mdbBtn color="pink" class="btn-margin text-uppercase" >Order Online
-                <mdb-icon fas icon="angle-right"></mdb-icon></button>
-        
-      
-          </div>
-        </div>
+
 
 <section id="email">
 
@@ -190,10 +180,10 @@
     
       </form>
         </section>
-        </section>
-        <!-- Intro -->
+        </section> 
+        Intro 
       
-      </header>
+      </header> -->
       <!-- Main navigation --> 
 
       <!--Main container-->
