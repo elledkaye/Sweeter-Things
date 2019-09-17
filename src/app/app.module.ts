@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component'; 
-import { MDBBootstrapModulesPro, ButtonsModule, PopoverModule, ModalModule,NavbarModule, TooltipModule, InputsModule, WavesModule, LightBoxModule, SidenavModule, AccordionModule, SmoothscrollModule, CardsModule } from 'ng-uikit-pro-standard';
+import { MDBBootstrapModulesPro, ButtonsModule, PopoverModule, ModalModule,NavbarModule, TooltipModule, CarouselModule,InputsModule, WavesModule, LightBoxModule, SidenavModule, AccordionModule, SmoothscrollModule, CardsModule } from 'ng-uikit-pro-standard';
 
 import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 import {DefaultPageComponent} from './default-page/default-page.component'; 
@@ -30,12 +30,15 @@ import { ProductPageComponent } from './product-page/product-page.component';
     BrowserModule,
     ButtonsModule,
     CardsModule,
+    CarouselModule,
+    FormsModule,
     InputsModule,
     LightBoxModule,
     MDBBootstrapModulesPro.forRoot(),
     ModalModule,
     NavbarModule,
     PopoverModule,
+    ReactiveFormsModule,
     SidenavModule,
     SmoothscrollModule,
     TooltipModule,

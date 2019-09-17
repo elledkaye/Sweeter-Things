@@ -116,7 +116,18 @@
         <!-- Intro -->
         <section id="view"> 
           
-      
+              <mdb-carousel class="container-fluid" [isControls]="false" [animation]="'slide'">
+                  <mdb-carousel-item>
+                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
+                  </mdb-carousel-item>
+                  <mdb-carousel-item>
+                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
+                  </mdb-carousel-item>
+                  <mdb-carousel-item>
+                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
+                  </mdb-carousel-item>
+                </mdb-carousel>
+            
           <div class="row ">
         
  
@@ -166,6 +177,19 @@
       
           </div>
         </div>
+
+<section id="email">
+
+        <h4 class="text-uppercase text-center"> Join our mailing list</h4 > 
+         
+         <form class="border border-light p-5"> 
+           <p class="mb-4 text-center"> enter your email for newsletters and coupons</p>
+         
+          <input mdbInput type="email" id="main-submit" class="form-control"> 
+          <button type="button" id="button" mdbBtn color="pink" class="btn-submit-margin text-uppercase" >submit</button>
+    
+      </form>
+        </section>
         </section>
         <!-- Intro -->
       
@@ -179,9 +203,6 @@
       <!--Content-->
       <div class="content" >  
         <h4 class="text-uppercase font-weight-bold text-center"  style="font-family: 'Playfair Display', serif;">Featured Products</h4>
-       <!--- <mdb-image-modal [modalImages]="images" type="margin" class="img-fluid"  ></mdb-image-modal>
-    <span>image</span> --> 
-
    
 <div id="products container-fluid">
     <div class="products-row container-fluid">

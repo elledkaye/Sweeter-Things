@@ -4,7 +4,7 @@ box-sizing: border-box;
 } 
 
 //for desktop//
-@media (min-width: 1281px){
+/*@media (min-width: 1281px){
 .logo{ 
     display:none; 
   }
@@ -14,8 +14,7 @@ box-sizing: border-box;
     color: #5d4267;
   }
  #header-title{
-    display: flex; 
-    flex-direction: column;
+    display:none;
   }
 .subheading {
   margin: 2.5rem 6rem;
@@ -26,15 +25,17 @@ box-sizing: border-box;
   background-image: url(/assets/img/background1.jpeg);
   background-repeat: no-repeat; 
   background-position: top center;
-  background-size:90% 90%;
+  background-size:65% 65%;
   height: 100vh;
 } 
 .row{ 
-  border: 1px solid black;  
+  padding: 10px;
+  border: 1px solid hotpink;  
   width:auto;
 }
 .col-md-6{
   border: 1px solid red; 
+  padding:5px;
 }
   .main-container{ 
  position: relative;
@@ -110,7 +111,7 @@ background: #BED3A2;
 
 
 #button-div{ 
-  
+  margin-top: 12rem;
   border:1px solid black; 
   width:100%; 
 } 
@@ -119,8 +120,9 @@ background: #BED3A2;
 
   .btn.btn-margin { 
     padding:20px;
-    margin-left: 5rem;
-    margin-top: 6rem;
+    margin-left: 33rem;
+    
+   
   } 
 
    .btn.btn-lily {
@@ -167,14 +169,16 @@ background: #BED3A2;
       background-image: url(/assets/img/background1.jpeg);
       background-repeat: no-repeat; 
       background-position: top center;
-      background-size:90% 90%;
+      background-size:60% 60%;
       height: 100vh;
     } 
     .row{ 
+      padding: 10px;
       border: 1px solid black;  
       width:auto;
     }
     .col-md-6{
+      padding:5px;
       border: 1px solid red; 
     }
       .main-container{ 
@@ -251,7 +255,8 @@ background: #BED3A2;
     
     
     #button-div{ 
-      
+      margin-top: 10rem;
+      padding:10px;
       border:1px solid black; 
       width:100%; 
     } 
@@ -260,8 +265,8 @@ background: #BED3A2;
     
       .btn.btn-margin { 
         padding:20px;
-        margin-left: 5rem;
-        margin-top: 6rem;
+        margin-left: 31.7rem;
+        
       } 
     
        .btn.btn-lily {
@@ -291,6 +296,18 @@ background: #BED3A2;
       #header-title{ 
         display: none; 
       }
+
+      .row{ 
+        padding: 10px;
+        border: 1px solid black;  
+        width:auto;
+      }
+      .col-md-6{
+        padding:5px;
+        border: 1px solid red; 
+      } 
+
+
       .logo{ 
         display: none; 
       }
@@ -343,6 +360,16 @@ background: #BED3A2;
     @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
       #header-title{display: none;} 
 
+      .row{ 
+        padding: 10px;
+        border: 1px solid black;  
+        width:auto;
+      }
+      .col-md-6{
+        padding:5px;
+        border: 1px solid red; 
+      }
+
       .main-container{background-color:#ffffff;}
 
   
@@ -363,7 +390,7 @@ background: #BED3A2;
           background-image: url(/assets/img/background1.jpeg);
           background-repeat: no-repeat; 
           background-position: top center;
-          background-size:95% 40%;
+          background-size:57% 57%;
           height: 100vh; 
           padding-top:10px;
         
@@ -373,10 +400,12 @@ background: #BED3A2;
         .nav-item{ 
         margin:10px; 
         }  
-  
+  .button-div{ 
+    margin-top: 12rem;
+    border:1px solid black; 
+    width:100%;}
         .btn.btn-margin{
         font-size:15px;
-        width:40%; 
         padding:20px; 
         margin-top:47%; 
         margin-left:27%; 
@@ -391,14 +420,23 @@ background: #BED3A2;
   
   section{overflow: auto;}
           
-  } 
+  } *\
 
   //for iphone X//
   //when the width is 375 or less// 
   //covers mobile, portrait//
-  @media only screen and (min-width:320px) and (max-width: 415px){
+ /* @media only screen and (min-width:320px) and (max-width: 415px){ 
+     #header-title{display:none;}
 
-    #header-title{display:none;}
+     .row{ 
+      padding: 10px;
+      border: 1px solid black;  
+      width:auto;
+    }
+    .col-md-6{
+      padding:5px;
+      border: 1px solid red; 
+    }
 
     .main-container{background-color:#ffffff;}
 
@@ -444,9 +482,217 @@ background: #BED3A2;
     section{overflow: auto;}
 
   }  
-
   
-  @media (min-width:416px) and (max-width:812px){
+   @media (min-width:416px) and (max-width:812px){
     #view{background-color:lightgreen;}
+
+    .row{ 
+      padding: 10px;
+      border: 1px solid black;  
+      width:auto;
+    }
+    .col-md-6{
+      padding:5px;
+      border: 1px solid red; 
+    }
+  }*/ 
+
+
+/*smartphones (portrait and landscape)*/ 
+@media only screen and (min-device-width : 320xpx) and (max-device-width: 480px) { 
+#header-title{
+      display:none; 
+}
+.row{ 
+      padding: 10px;
+      border: 1px solid black;  
+      width:auto;
+    }
+   .col-md-6{
+      padding:5px;
+      border: 1px solid red; 
+    }
+
+}
+/*smartphones (landscape) */
+@media only screen and (min-width: 321px){ 
+
+} 
+
+/*smartphones (portrait) */ 
+@media only screen and (max-width: 320px){ 
+
+}
+ 
+
+/*iphone X*/ 
+/*landscape*/
+@media only screen and (min-device-width: 375px) and (max-device-height:812px ) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){ 
+  #header-title{display:none;}
+
+  .row{ 
+   padding: 10px;
+   border: 1px solid black;  
+   width:auto;
+ }
+ .col-md-6{
+   padding:5px;
+   border: 1px solid red; 
+ }
+
+ .products-row{display:flex;
+  flex-direction: column; 
+ justify-content: space-evenly;
+}
+   
+
+.heading {
+    margin: 0 5rem;
+    padding-top:10px;
+    font-weight: 300;
+    color:blue;
+ 
+ }  
+
+  #view { 
+    background-color: blue;
+    background-image: url(/assets/img/background1.jpeg);
+    background-repeat: no-repeat; 
+    background-position: top center;
+    background-size: 95% 50%;
+    height: 100vh; 
+    padding-top:10px;
+  
+  } 
+
+ .nav-item{margin:10px;}  
+
+ .btn.btn-margin{
+  margin-left:10rem; 
+  font-size:15px;
+  margin-top:1.5%; 
+  width:100%; 
+  padding:7.5%; 
+ }
+
+  hr{margin:5px; 
+ } 
+
+  figure img{ filter:blur(2px);
+ }
+
+  figure:hover img{filter:blur(0);
+ } 
+
+section{overflow: auto;
+}
+
+footer{background-color:pink; }
+
+footer .container-fluid{width:100vw;}
+
+ 
+} 
+
+/*portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  #header-title{
+    display:none;
   }
+
+  .row{ 
+   padding: 10px;   
+   width:auto;
+ }
+ .col-md-6{ 
+   padding:5px;
+   border: 1px solid red; 
+ }
+
+ .products-row{ 
+   display:flex;
+   flex-direction: column; 
+  justify-content: space-evenly;
+}
+    
+
+ .heading {
+     margin: 0 5rem;
+     padding-top:10px;
+     font-weight: 300;
+     color:blue;
+  
+  }  
+
+   #view {  
+     background-color: coral;
+     /*background-image: url(/assets/img/background1.jpeg);*/
+     background-repeat: no-repeat; 
+     background-position: top center;
+  
+     
+     padding-top:10px;
+    } 
+ 
+  .nav-item{ 
+    margin:10px; 
+  }  
+
+
+  #button-row{ 
+    padding:10px;
+    display: flex; 
+  }
+
+  .btn.btn-margin{
+   margin-left:3.5rem;
+   font-size:15px;
+   margin-top:23.5%; 
+   width:100%; 
+   padding:7.5%; 
+  }
+
+
+  #email{ 
+    width:100%; 
+    margin-top:4rem;
+  }
+  .md-form-submit{ 
+    
+    border: solid 1px black;
+    width:100%;
+   
+  
+   }  
+
+   form{  
+     background-color:lightblue;
+     display: flex; 
+     flex-direction: column; 
+    align-content: center;
+  } 
+ 
+  #main-submit{  
+    width: 100%;
+    
+  }
+
+   hr{margin:5px; 
+  } 
+
+   figure img{ filter:blur(2px);
+  }
+
+   figure:hover img{filter:blur(0);
+  } 
+
+section{overflow: auto;
+}
+
+footer{background-color:pink; }
+
+footer .container-fluid{width:100vw;}
+
+  }
+  
   footer .container-fluid{width:100vw;}
