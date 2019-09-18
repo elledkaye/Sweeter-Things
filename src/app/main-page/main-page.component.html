@@ -65,131 +65,79 @@
                   <div class="modal-footer"> 
                          <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Not Ready Yet</button>
                          <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Check Out</button>
-
                   </div> 
                   <!--./modal-footer-->
-                  
+ 
              </div>
              <!--./modal-content-->
          </div>
-
-        </div> 
-
-     
-
+        </div>
     </links>
 </mdb-navbar> 
 
 <!--Navbar-->  
     </div> 
-    <section id="view">  
-      <div>
-          <div id="imgCarousel" class="carousel slide" data-ride="carousel"  >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="./assets/img/pastry1.jpeg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="./assets/img/pastry1.jpeg" alt="Second slide">
-                </div>
-               
-              </div>
-            </div>
-         
-          </div>
-    </section>
-        <!-- Intro -->
-        <!--<section id="view">  
-          <div class="carousel-row container-fluid"> 
-            carousel row
-            <mdb-carousel class="container-fluid" [isControls]="false" [animation]="'slide'">
-                <div class="carousel-inner">  
-                  carousel inner
-              <mdb-carousel-item>
-                  <img class="d-block img-fluid" src="./assets/img/pastry1.jpeg" alt="First slide">
-                </mdb-carousel-item> 
-                <mdb-carousel-item>
-                  <img class="d-block img-fluid" src="/assets/img/pastry1.jpeg" alt="Second slide">
-                </mdb-carousel-item>
-                <mdb-carousel-item>
-                  <img class="d-block w-100" src="/assets/img/pastry1.jpeg" alt="Third slide">
-                </mdb-carousel-item>
-                <mdb-carousel-item>
-                    <img class="d-block w-100" src="/assets/img/pastry1.jpeg" alt="Third slide">
-                  </mdb-carousel-item>
-                </div>
-              </mdb-carousel>
-          </div>
-          <div class="row "> 
-            row
-            <div class="col-md-6"> 
-                <div id="button-row" class="button-row"> 
-                  button-row
-                    <div id="button-div" class="mr-auto">
-                        <button type="button" id="button" mdbBtn color="pink" class="btn-margin text-uppercase" >Order Online
-                          <mdb-icon fas icon="angle-right"></mdb-icon></button>
-                  
-                
-                    </div>
+    <section id="top-view">  
+      <div id="carousel">
+        <ngb-carousel>
+             <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper">
+                      <img src="./assets/img/pastry1.jpeg" alt="Random first slide">
                   </div>
-               
-      
-                <div class="d-flex flex-column justify-content-center h-100">
-               
+                  <div class="carousel-caption">
+                      <h3>First slide label</h3>
+                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper"> 
 
-                       <div>
-                <h2 class="font-weight-bold text-center"> Bake the world a better place</h2> 
-                <article class="text-center"> We offer various kinds of pastrys, 
-                   we also offer vegan ad vegetarian friendly pastries 
-                  </article>
-
+                    <img src="./assets/img/pastry1.jpeg">
+                  </div> 
+                  <div class="carousel-caption"> 
+                    <h3>Caption</h3>
+                  </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                  <div class="picsum-img-wrapper"> 
+                    <img src="./assets/img/pastry1.jpeg">
+                  </div> 
+                     <div class="carousel-caption"> 
+                      <h3>Caption</h3>
+                    </div>
+              </ng-template>
+          </ngb-carousel>
+        </div>
+          <div id="button-row" class="button-row">   
+              <div id="button-div" class="mr-auto">
+                  <button type="button" id="button" mdbBtn color="pink" class="btn-margin text-uppercase" >Order Online
+                    <mdb-icon fas icon="angle-right"></mdb-icon></button> 
+                   
+                    </div>  
+              </div> 
+              <h2 class="font-weight-bold text-center"> Bake the world a better place</h2> 
+              <div class="top-view-col col-md-6 d-flex flex-col"> 
              
-             </div>
-                
-                </div>
-      
-            </div>
-      
-            <div class="col-md-6">
-      
-              <div class="view">
-                
-
-      
-              </div>
-      
-            </div>
-          
-
-            
-           
-          </div> 
-
-      
-
-
-<section id="email">
-
-        <h4 class="text-uppercase text-center"> Join our mailing list</h4 > 
+                  <article class="text-center"> We offer various kinds of pastrys, 
+                      we also offer vegan and vegetarian friendly pastries 
+                     </article>
+              </div>   
+              <section id="email"> 
+                  <h4 class="text-uppercase text-center"> Join our mailing list</h4 > 
+                    <form class="border border-light p-5"> 
+                        <p class="mb-4 text-center"> enter your email for newsletters and coupons</p>
+                      
+                       <input mdbInput type="email" id="main-submit" class="form-control"> 
+                       <button type="button" id="button" mdbBtn color="pink" class="btn-submit-margin text-uppercase" >submit</button>
+                 
+                   </form>
+              </section>
          
-         <form class="border border-light p-5"> 
-           <p class="mb-4 text-center"> enter your email for newsletters and coupons</p>
-         
-          <input mdbInput type="email" id="main-submit" class="form-control"> 
-          <button type="button" id="button" mdbBtn color="pink" class="btn-submit-margin text-uppercase" >submit</button>
-    
-      </form>
-        </section>
-        </section> 
-        Intro 
-      
-      </header> -->
+    </section> 
+      </header> 
       <!-- Main navigation --> 
-
       <!--Main container-->
       <div class="main-container" style="height: 250vh"> 
-       
-
       <!--Content-->
       <div class="content" >  
         <h4 class="text-uppercase font-weight-bold text-center"  style="font-family: 'Playfair Display', serif;">Featured Products</h4>
@@ -204,7 +152,6 @@
             <p>Centered</p> 
           </div>
           </div>
-
           <div class="img-container"> 
             <figure>
                      <img class="img-fluid rounded" src="./assets/img/blogimg3.jpeg" class="img-fluid" alt="placeholder">
@@ -238,10 +185,7 @@
 <div class="content">
 <section id="about">
     <h4 class="text-uppercase font-weight-bold text-center"  style="font-family: 'Playfair Display', serif;">About</h4>
-
 <div  class="about"> 
-
-    
     <div class="row">
         <div class="col-md-4">
           <!--Card-->
@@ -303,17 +247,8 @@
               <h4 class="card-title font-weight-bold">What We Have To Offer</h4>
               <!--Text-->
       
-            <!--- <mdb-card-text>
-                  <i class="fas fa-check"></i>Catoring <br>
-                  <i class="fas fa-check"></i>Custom Creations <br>
-                  <i class="fas fa-check"></i>Delivery <br>
-                  <i class="fas fa-check"></i>Gluten Free  <br> 
-                  <i class="fas fa-check"></i>Vegan & Vegetarian Friendly <br> 
-                  <i class="fas fa-check"></i>
-              </mdb-card-text>-->
-      
               <div class="card border-0">
-                 
+                
                   <ul class="list-group list-group-flush border-0 ">
                     <li class="list-group-item border-0"> <i class="fas fa-check">Catoring </i></li>
                     <li class="list-group-item border-0"><i class="fas fa-check">Custom Designs</i></li>
@@ -406,7 +341,7 @@
                   <h6 class="text-uppercase mb-4 font-weight-bold">footer links</h6>
       
                   <!--Footer Links (2)--> 
-                  <div class="row text-center text-md-left "> 
+                  <div class="footer-row text-center text-md-left "> 
       
                       <!--Grid column (0)--> 
                       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">  
@@ -445,7 +380,7 @@
                   <!--Closing tag for footer links 2--> 
       
                   <!--Grid row (1)--> 
-                  <div class="row d-flex align-items-center"> 
+                  <div class="footer-row d-flex align-items-center"> 
                   
                       <!--Grid column (5)--> 
                       <div col-md-7 col-lg-8> 
