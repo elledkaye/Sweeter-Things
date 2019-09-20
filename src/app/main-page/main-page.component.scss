@@ -498,7 +498,169 @@ background: #BED3A2;
   }*/ 
 /***************************************************************************************************************************************************
 ****************************************************************************************************************************************************/
+/* Desktops and laptops */
+@media only screen  and (min-width : 1224px) {
+  .heading {
+    margin: 0 5rem;
+    font-weight: 300;
+    color:blue;
+   }   
 
+  #header-title{
+    display:none;
+    }
+    #top-view {  
+    background-color: #FFAABB;
+    background-image: url(/assets/img/background1.jpeg);
+    height:auto;
+    padding-top:10px; 
+    margin-top:0;
+   }  
+  .top-view-col{
+   margin-right:10rem; 
+  padding:0;
+  }
+
+  .carousel{ 
+  border:solid 2px purple; 
+}
+  .carousel-item {
+  height: 600px;
+  overflow: hidden;
+  width: 70vw;
+    }
+  .carousel-item img {
+   width: 200%;
+   } 
+   #button-row{ 
+   
+    border: solid 3px orange;  
+    display: flex;   
+    } 
+    .button-div{ 
+      border: solid 2px white; 
+    } 
+    .btn.btn-margin{  
+      align-self:center; 
+      border: solid 3px orange;
+     margin-right:3.0rem;
+     margin-left:3.0rem;
+     margin-top:0;
+     font-size:15px;
+     width:100%; 
+     padding:7.5%; 
+    }
+    form{  
+      margin-top:0;
+      background-color:lightblue;
+      display: flex; 
+      flex-direction: column; 
+      align-content: center;
+      } 
+    .mb-4{ 
+      font-size:20px;
+    }  
+    #email{ 
+      width:auto;
+      margin-top:0;   
+    } 
+    #main-submit{   
+      font-size:16px; 
+      text-align: center;
+      align-self:center;
+      width: 50vw; 
+     }
+
+    .btn-submit-margin{ 
+      font-size:16px;
+      align-self:center;
+      width:50vw; 
+    }
+  .row{ 
+    padding: 15px;   
+    width:auto; 
+    border: solid 3px hotpink; 
+    margin:10px;
+    height:100vh;
+  } 
+  .products-row{  
+    display:flex;
+    margin:10px;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    }
+    .content{ 
+      background-color:#FFAABB;
+      border:solid 2px black; 
+    }
+  .email-row{ 
+    width:auto; 
+    border: solid 3px hotpink; 
+    height:100vh;
+    }
+  #view {  
+    background-color: #FFAABB;
+  
+    height:auto;
+    padding-top:10px;
+   } 
+  .col-md-6{ 
+    padding:5px;
+    border: 3px solid limegreen; 
+  } 
+ 
+  .nav-item{ 
+    margin:10px; 
+  }  
+  .img-container{
+    padding:10px;
+    position: relative;
+    text-align: center; 
+    color:black; 
+    font-weight: 500;
+    font-size:32px;
+  } 
+  .centered{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);  
+ } 
+    
+  
+     hr{margin:5px; 
+    } 
+  
+     figure img{ filter:blur(2px);
+    }
+  
+     figure:hover img{filter:blur(0);
+    } 
+  section{ 
+    overflow: auto;
+  } 
+ .about{  
+   display: flex; 
+   justify-content: space-evenly; 
+  background-color:orange;
+    } 
+  
+  footer{background-color:#67C0FC; }
+  
+  footer .container-fluid{width:100vw;}
+  
+    }
+  
+  
+/***************************************************************************************************************************************************
+****************************************************************************************************************************************************/
+  /* Large screens ----------- */
+  @media only screen  and (min-width : 1824px) {
+  /* Styles */
+  }
+
+/***************************************************************************************************************************************************
+****************************************************************************************************************************************************/
 /*smartphones (portrait and landscape)*/ 
 @media only screen and (min-device-width : 320xpx) and (max-device-width: 480px) { 
 #header-title{
@@ -878,7 +1040,20 @@ justify-content: space-evenly;
 section{ 
   overflow: auto;
 }
-
+.img-container{
+  padding:10px;
+  position: relative;
+  text-align: center; 
+  color:black; 
+  font-weight: 500;
+  font-size:32px;
+} 
+.centered{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);  
+} 
 footer{background-color:#67C0FC; }
 
 footer .container-fluid{width:100vw;}
