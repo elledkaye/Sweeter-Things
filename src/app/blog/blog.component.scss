@@ -1,5 +1,8 @@
-*{padding:0; margin:0;}
-
+*{padding:0px;
+  margin:0px; 
+  box-sizing: border-box; 
+  } 
+/*
 .blog-content{background:#f8bbd0;} 
 
 .page-view{background-color:#f8bbd0; 
@@ -16,15 +19,6 @@
 
     .view{background:#E5E2DA;}
 
-.navbar:not(.top-nav-collapse) {
-    background: transparent;
-  } 
-
-  .navbar .navbar-brand img {
-    height: 40px;
-    margin: 10px;
-  }
-
   .dropdown-menu {
     left: unset !important;
     right: 0 ;
@@ -32,4 +26,36 @@
 
   footer{ 
     background: #BED3A2; 
+  }  */ 
+
+  /**iphone X*/ 
+  /*landscape*/ 
+  /*NEED TO COME BACK AND FINISH LANDSCAPE*/
+  @media only screen and (min-device-width: 375px) and (max-device-height:812px ) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+
   } 
+
+  /*portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) {
+  hr{ 
+    margin:5px; 
+ }  
+ .nav-item{ 
+  margin:10px; 
+}   
+.contribute-btn{
+  border:solid 3px black;
+  display: flex;
+ }
+  .contribute-btn button{ 
+  align-self: center; 
+} 
+
+
+.blog-content{ 
+  border:solid 2px lime; 
+  background-color: paleturquoise;
+} 
+
+.row{border:solid 4px blue;}
+} 

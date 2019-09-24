@@ -549,40 +549,54 @@ background: #BED3A2;
      font-size:15px;
      width:100%; 
      padding:7.5%; 
-    }
-    form{  
-      margin-top:0;
-      background-color:lightblue;
-      display: flex; 
-      flex-direction: column; 
-      align-content: center;
-      } 
-    .mb-4{ 
-      font-size:20px;
-    }  
-    #email{ 
-      width:auto;
-      margin-top:0;   
+  }
+  form{  
+    margin-top:0;
+    background-color:lightblue;
+    display: flex; 
+    flex-direction: column; 
+    align-content: center;
     } 
-    #main-submit{   
-      font-size:16px; 
-      text-align: center;
-      align-self:center;
-      width: 50vw; 
-     }
-
-    .btn-submit-margin{ 
-      font-size:16px;
-      align-self:center;
-      width:50vw; 
-    }
-  .row{ 
-    padding: 15px;   
-    width:auto; 
-    border: solid 3px hotpink; 
-    margin:10px;
-    height:100vh;
+  .mb-4{ 
+    font-size:20px;
+  }  
+  #email{ 
+    width:auto;
+    margin-top:0;   
   } 
+  #main-submit{   
+    font-size:16px; 
+    text-align: center;
+    align-self:center;
+     width: 50vw; 
+    }
+  .btn-submit-margin{ 
+    font-size:16px;
+    align-self:center;
+    width:50vw; 
+  }
+.row{ 
+  display: flex;
+  flex-direction: row;
+    justify-content: space-evenly;
+  width:auto; 
+  border: solid 3px hotpink; 
+  margin:10px;
+  height:100vh;
+} 
+ .view{ 
+   border:solid 2px black; 
+  } 
+ mdb-card{ 
+   border:solid 3px lime; 
+   margin:10px;}
+  .about{  
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly; 
+    background-color:orange;
+     } 
+   
   .products-row{  
     display:flex;
     margin:10px;
@@ -639,12 +653,7 @@ background: #BED3A2;
   section{ 
     overflow: auto;
   } 
- .about{  
-   display: flex; 
-   justify-content: space-evenly; 
-  background-color:orange;
-    } 
-  
+ 
   footer{background-color:#67C0FC; }
   
   footer .container-fluid{width:100vw;}
@@ -939,16 +948,11 @@ justify-content: space-evenly;
 } 
 /*portrait*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) {
-.heading {
-  margin: 0 5rem;
-  font-weight: 300;
-  color:blue;
- }  
 #header-title{
   display:none;
   }
   #top-view {  
-  background-color: #FFAABB;
+  background-color: #FFC4E0;
   height:auto;
   padding-top:10px; 
   margin-top:0;
@@ -961,7 +965,10 @@ padding:0;
 height: 300px;
 overflow: hidden;
 width: 100%;
-  }
+}
+  .carousel-caption{ 
+  padding-bottom:15px;
+}
 .carousel-item img {
  width: 100%;
  } 
@@ -970,70 +977,76 @@ width: 100%;
   border: solid 3px hotpink; 
   height:100vh;
   }
-.row{ 
-  padding: 15px;   
-  width:auto; 
-  border: solid 3px hotpink; 
-  margin:10px;
-  height:100vh;
+  .row{ 
+   padding: 15px;   
+    width:auto; 
+    border: solid 3px hotpink; 
+    margin:10px;
+    height:100vh;
+  }
+  #button-row{ 
+  display: flex;  
+  } 
+  .button-div{ 
+    border: solid 2px white; 
+  } 
+  .btn.btn-margin{ 
+  margin-right:3.0rem;
+  margin-left:3.0rem;
+  margin-top:0;
+  font-size:15px;
+  width:100%; 
+  padding:7.5%; 
+  }
+  #view {  
+background-color: #FFAABB;
+height:auto;
+padding-top:10px;
+} 
+  .col-md-6{ 
+padding:5px;
+  } 
+ 
+  .nav-item{ 
+    margin:10px; 
+  }  
+  #email{ 
+  width:100%; 
+  margin-top:0;   
+} 
+form{  
+  margin-top:0;
+  background-color:#FCE3F1;
+  display: flex; 
+  flex-direction: column; 
+  align-content: center;
+  } 
+  #main-submit{  
+  width: 100%;  
+} 
+
+input:invalid{
+  border:2px dashed red;
+} 
+input:valid{
+  border:2px dashed green;
 }
-#button-row{ 
-display: flex;  
-} 
-.button-div{ 
-  border: solid 2px white; 
-} 
-.btn.btn-margin{ 
- margin-right:3.0rem;
- margin-left:3.0rem;
- margin-top:0;
- font-size:15px;
- width:100%; 
- padding:7.5%; 
-}
-#view {  
-  background-color: #FFAABB;
-  /*background-image: url(/assets/img/background1.jpeg);*/
-   height:auto;
-  padding-top:10px;
- } 
-.col-md-6{ 
-  padding:5px;
-  border: 3px solid limegreen; 
-} 
 .products-row{  
-display:flex;
-margin:10px;
-flex-direction: column; 
-justify-content: space-evenly;
+  display:flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
+  background-color: #FCE3F1;
+  }
+  figure img{ 
+  filter:blur(2px);
 }
-.nav-item{ 
-  margin:10px; 
-}  
- #email{ 
-    width:100%; 
-    margin-top:0;   
-  } 
-  form{  
-    margin-top:0;
-    background-color:lightblue;
-    display: flex; 
-    flex-direction: column; 
-     align-content: center;
-    } 
-   #main-submit{  
-   width: 100%;
-    
-  }
+figure:hover img{filter:blur(0);
+} 
+ hr{ 
+   margin:5px; 
+} 
+  
 
-   hr{margin:5px; 
-  } 
-
-   figure img{ filter:blur(2px);
-  }
-
-   figure:hover img{filter:blur(0);
-  } 
 
  
 
