@@ -50,12 +50,14 @@
   .contribute-btn button{ 
   align-self: center; 
 } 
-
-
-.blog-content{ 
-  border:solid 2px lime; 
-  background-color: paleturquoise;
-} 
-
-.row{border:solid 4px blue;}
+form .form-group .form-control #message-content{ 
+height:50%;
+}
+  .blog-content{ 
+border:solid 2px lime; 
+background-color: #FFC4E0;
+  } 
+.row{ 
+border:solid 4px blue; 
+padding:10px;}
 } 
