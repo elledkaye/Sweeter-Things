@@ -516,10 +516,10 @@ background: #BED3A2;
     padding-top:10px; 
     margin-top:0;
    }  
-  .top-view-col{
-   margin-right:10rem; 
-  padding:0;
-  }
+    .top-view-col{
+    margin-right:10rem; 
+    padding:0;
+    }
 
   .carousel{ 
   border:solid 2px purple; 
@@ -533,7 +533,6 @@ background: #BED3A2;
    width: 200%;
    } 
    #button-row{ 
-   
     border: solid 3px orange;  
     display: flex;   
     } 
@@ -670,6 +669,172 @@ background: #BED3A2;
 
 /***************************************************************************************************************************************************
 ****************************************************************************************************************************************************/
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #header-title{
+    display:none;
+    }
+  
+  #top-view {  
+    background-color: #FFC4E0;
+    height:auto;
+    padding-top:10px; 
+    margin-top:0;
+    } 
+    
+    #top-view {  
+      background-color: #FFAABB;
+      height:auto;
+      padding-top:10px; 
+      margin-top:0;
+     } 
+
+     .top-view-col{
+      margin-right:10rem; 
+     padding:0;
+     }
+     .carousel{ 
+      border:solid 2px purple; 
+    }
+      .carousel-caption{ 
+    padding-bottom:15px;
+  }
+
+  .carousel-item img {
+    width: 200%;
+    } 
+
+    .carousel-item {
+      height: 300px;
+    overflow: hidden;
+    width: 50vw;}
+
+    .email-row{ 
+      width:auto; 
+      border: solid 3px hotpink; 
+      height:100vh;
+    }
+
+    .row{ 
+      padding: 15px;   
+       width:auto; 
+       border: solid 3px hotpink; 
+       margin:10px;
+       height:100vh;
+     }
+
+     #button-row{ 
+     
+       border:2px solid black;
+      display: flex;  
+      } 
+  .btn.btn-margin{ 
+    border:2px solid black;
+    align-self: center;
+    margin-top:0;
+    font-size:15px;
+    width:100%; 
+    padding:7.5%; 
+    }
+
+    #view {  
+      background-color: #FFAABB;
+      height:auto;
+      padding-top:10px;
+      } 
+
+      .col-md-6{ 
+        padding:5px;
+          } 
+          .nav-item{ 
+            margin:10px; 
+          } 
+
+          #email{ 
+            width:100%; 
+            margin-top:0;   
+          } 
+          form{  
+            margin-top:0;
+            background-color:#FCE3F1;
+            display: flex; 
+            flex-direction: column; 
+            align-content: center;
+            } 
+            .mb-4{ 
+              font-size:20px;
+            }  
+            #main-submit{  
+              width: 100%;  
+            }
+            
+            input:invalid{
+              border:2px dashed red;
+            } 
+            input:valid{
+              border:2px dashed green;
+            }
+            .products-row{  
+              display:flex;
+              flex-direction: column; 
+              justify-content: space-evenly;
+              background-color: #FCE3F1;
+              }
+              figure img{ 
+              filter:blur(2px);
+            }
+            figure:hover img{filter:blur(0);
+            } 
+             hr{ 
+               margin:5px; 
+            } 
+              
+              section{ 
+            overflow: auto;
+              }
+            .img-container{
+              padding:10px;
+              position: relative;
+              text-align: center; 
+              color:black; 
+              font-weight: 500;
+              font-size:32px;
+            } 
+            .centered{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform:translate(-50%, -50%);  
+            } 
+            footer{background-color:#67C0FC; }
+            
+            footer .container-fluid{width:100vw;}
+            
+              
+  }
+  
+  /* iPads (landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+  }
+  
+  /* iPads (portrait) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+  }
+  /**********
+  iPad 3
+  **********/
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  }
+
+
+
 /*smartphones (portrait and landscape)*/ 
 @media only screen and (min-device-width : 320xpx) and (max-device-width: 480px) { 
 #header-title{
@@ -949,61 +1114,61 @@ justify-content: space-evenly;
 /*portrait*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) {
 #header-title{
-  display:none;
+display:none;
+}
+#top-view {  
+background-color: #FFC4E0;
+height:auto;
+padding-top:10px; 
+margin-top:0;
+}  
+ .top-view-col{
+  margin-right:10rem; 
+  padding:0;
+  } 
+.carousel-caption{ 
+    padding-bottom:15px;
   }
-  #top-view {  
-  background-color: #FFC4E0;
-  height:auto;
-  padding-top:10px; 
-  margin-top:0;
- }  
-.top-view-col{
- margin-right:10rem; 
-padding:0;
+  .carousel-item img {
+   width: 100%;
+   } 
+  .carousel-item {
+    height: 300px;
+  overflow: hidden;
+  width: 100%;
 }
-.carousel-item {
-height: 300px;
-overflow: hidden;
-width: 100%;
-}
-  .carousel-caption{ 
-  padding-bottom:15px;
-}
-.carousel-item img {
- width: 100%;
- } 
-.email-row{ 
+  .email-row{ 
   width:auto; 
   border: solid 3px hotpink; 
   height:100vh;
-  }
-  .row{ 
+}
+ .row{ 
    padding: 15px;   
     width:auto; 
     border: solid 3px hotpink; 
     margin:10px;
     height:100vh;
-  }
-  #button-row{ 
+}
+#button-row{ 
   display: flex;  
-  } 
-  .button-div{ 
-    border: solid 2px white; 
-  } 
-  .btn.btn-margin{ 
+} 
+.button-div{ 
+  border: solid 2px white; 
+} 
+.btn.btn-margin{ 
   margin-right:3.0rem;
   margin-left:3.0rem;
   margin-top:0;
   font-size:15px;
   width:100%; 
   padding:7.5%; 
-  }
-  #view {  
-background-color: #FFAABB;
-height:auto;
-padding-top:10px;
-} 
-  .col-md-6{ 
+}
+#view {  
+  background-color: #FFAABB;
+  height:auto;
+  padding-top:10px;
+  } 
+.col-md-6{ 
 padding:5px;
   } 
  
@@ -1046,13 +1211,9 @@ figure:hover img{filter:blur(0);
    margin:5px; 
 } 
   
-
-
- 
-
-section{ 
-  overflow: auto;
-}
+  section{ 
+overflow: auto;
+  }
 .img-container{
   padding:10px;
   position: relative;
