@@ -1,0 +1,143 @@
+<div  class="about"> 
+    <div class="row">
+        <div class="col-md-4">
+          <!--Card-->
+          <mdb-card cascade="true">
+      
+            <!--Card image-->
+            <div class="view view-cascade overlay waves-strong" mdbWavesEffect>
+              <mdb-card-img src="./assets/img/pastry1.jpeg"></mdb-card-img>
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--/Card image-->
+      
+            <mdb-card-body cascade="true" class="text-center pb-0">
+              <!--Card content-->
+              <!--Title-->
+              <h4 class="card-title">
+                <strong>About US</strong>
+              </h4>
+              
+      
+              <mdb-card-text>
+                Gluten free 
+              </mdb-card-text>
+      
+              <!-- Card footer -->
+              <div class="card-footer text-muted text-center mt-4">
+               
+              </div>
+      
+      
+            </mdb-card-body>
+            <!--/.Card content-->
+      
+      
+          </mdb-card>
+          <!--/.Card-->
+        </div> 
+        <!--/.Column-->
+      
+        <div class="col-md-4">
+          <!--Card-->
+          <mdb-card cascade="true">
+      
+            <!--Card image-->
+            <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+              <mdb-card-img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"></mdb-card-img>
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--/.Card image-->
+      
+            <mdb-card-body cascade="true" class="text-center pb-0 px-0">
+              <!--Card content-->
+              
+              <!--Title-->
+              <h4 class="card-title font-weight-bold">What We Have To Offer</h4>
+              <!--Text-->
+      
+              <div class="card border-0">
+                
+                  <ul class="list-group list-group-flush border-0 ">
+                    <li class="list-group-item border-0"> <i class="fas fa-check">Catoring </i></li>
+                    <li class="list-group-item border-0"><i class="fas fa-check">Custom Designs</i></li>
+                    <li class="list-group-item border-0"><i class="fas fa-check"> </i>Delivery</li> 
+                    <li class="list-group-item border-0"><i class="fas fa-check"> </i>Gluten Free</li> 
+                    <li class="list-group-item border-0"><i class="fas fa-check"> </i>Vegan Friendly</li>  
+
+                  </ul>
+                </div>
+      
+              <!-- Card footer -->
+              <div class="card-footer text-muted text-center mt-4">
+              
+              </div>
+      
+            </mdb-card-body>
+            <!--/.Card content-->
+      
+          </mdb-card>
+          <!--/.Card-->
+        </div>
+      
+        <div class="col-md-4">
+          <!--Card-->
+          <mdb-card cascade="true">
+      
+            <!--Card image-->
+            <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+              <mdb-card-img src="./assets/img/backsplashpage1.jpeg"></mdb-card-img>
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--/Card image-->
+      
+            <mdb-card-body cascade="true" class="text-center pb-0 px-0">
+              <!--Card content-->
+              <h4 class="card-title">
+                <strong>Get Connected</strong>
+              </h4>
+              <h5>@SweeterthingsnLife</h5>
+              <h5>#SweeterthingsnLife</h5>
+      
+              <mdb-card-text>
+                Hashtag #SweeterthingsnLife or @SweeterthingsnLife to get discounts!
+              </mdb-card-text>
+      
+              <!--Facebook-->
+              <a type="button" mdbBtn floating="true" size="sm" color="fb" class="waves-light" mdbWavesEffect>
+                <mdb-icon fab icon="facebook"></mdb-icon>
+              </a>
+              <!--Twitter-->
+              <a type="button" mdbBtn floating="true" size="sm" color="tw" class="waves-light" mdbWavesEffect>
+                <mdb-icon fab icon="twitter"></mdb-icon>
+              </a>
+              <!--Google +-->
+
+      
+              <!-- Card footer -->
+              <div class="card-footer text-muted text-center mt-4">
+               
+              </div>
+      
+            </mdb-card-body>
+            <!--/.Card content-->
+      
+          </mdb-card>
+          <!--/.Card-->
+        </div>
+      </div> 
+      <!--./Row-->
+</div>  
+<!--/.About-->
+
+
+<!--/.Section-->
+
+</div> 
+<!--/.Content--> 

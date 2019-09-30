@@ -1,9 +1,22 @@
-.order-content{background-color:pink;} 
-
-.navbar:not(.top-nav-collapse) {
-    background: transparent;
-  }
-  .navbar .navbar-brand img {
-    height: 40px;
-    margin: 10px;
-  }
+*{padding:0px;
+  margin:0px; 
+  box-sizing: border-box; 
+  } 
+/*portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) {  
+hr{margin:5px;}
+.order-col{
+  flex-direction: column; 
+}
+.order-content{
+  width:100vw;
+  border-style:solid 2px black; 
+  background-color:pink; 
+}
+.col-md-4{
+  border-style: solid 2px black; 
+}
+footer{
+  background-color:#789CCE; 
+}
+}
