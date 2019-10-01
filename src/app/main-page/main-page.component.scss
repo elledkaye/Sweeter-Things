@@ -820,7 +820,122 @@ background: #BED3A2;
   
   /* iPads (portrait) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  /* Styles */
+    #header-title{
+      display:none;
+      }
+      .logo{
+        font-family: 'Oxygen';
+       } 
+      #top-view {  
+      background-color: #FFC6D0;
+      height:auto;
+      padding-top:10px; 
+      margin-top:0;
+      }  
+     .top-view-col{
+      margin-right:10rem; 
+      padding:0;
+     } 
+       .carousel-caption{ 
+        padding-bottom:15px;
+      }
+     .carousel-item img {
+       width: 100%;
+       } 
+     .carousel-item {
+       height: 300px;
+       overflow: hidden;
+       width: 100%;
+     }
+       .email-row{ 
+       width:auto; 
+       border: solid 3px hotpink; 
+       height:100vh;
+      }
+     .row{ 
+       padding: 15px;   
+       width:auto; 
+       border: solid 3px hotpink; 
+       margin:10px;
+       height:100vh;
+       }
+       #button-row{ 
+         display: flex;  
+       } 
+     .button-div { 
+      border: solid 2px white; 
+     } 
+      .btn.btn-margin{   
+          margin-right:3.0rem;
+          margin-left:3.0rem;
+          margin-top:0;
+          font-size:15px;
+          width:100%;   
+          padding:7.5%; 
+     }
+     #view {  
+       background-color: #FFAABB;
+       height:auto;
+       padding-top:10px;
+     }  
+     .col-md-6{ 
+     padding:5px;
+     } 
+       .nav-item{ 
+     margin:10px; 
+       }
+     
+     #email{ 
+         width:100%; 
+         margin-top:0;   
+     } 
+     form{  
+       margin-top:0;
+       background-color:#FCE3F1;
+       display: flex; 
+       flex-direction: column; 
+       align-content: center;
+       } 
+       #main-submit{  
+       width: 100%;  
+       }     
+       .products-row{  
+         display:flex;
+         flex-direction: column; 
+         justify-content: space-evenly;
+         background-color: #FFD6DA;
+     }
+         figure img{ 
+         filter:blur(2px);
+       }
+       figure:hover img{filter:blur(0);
+       } 
+     hr{ 
+       margin:5px; 
+       } 
+     section{ 
+       overflow: auto;
+         }
+       .img-container{
+       font-family: 'Noto Serif', serif;
+       padding:10px;
+       position: relative;
+       text-align: center; 
+       color:black; 
+       font-weight: 500;
+       font-size:32px;
+     } 
+     .centered{
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%, -50%);  
+     } 
+     footer{
+     background-color:#789CCE; 
+     font-family:'Oxygen', sans-serif; 
+     }
+     footer .container-fluid{width:100vw;}
   }
   /**********
   iPad 3
@@ -830,11 +945,123 @@ background: #BED3A2;
   }
   
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-  /* Styles */
+    #header-title{
+      display:none;
+      }
+      .logo{
+        font-family: 'Oxygen';
+       } 
+      #top-view {  
+      background-color: #FFC6D0;
+      height:auto;
+      padding-top:10px; 
+      margin-top:0;
+      }  
+     .top-view-col{
+      margin-right:10rem; 
+      padding:0;
+     } 
+       .carousel-caption{ 
+        padding-bottom:15px;
+      }
+     .carousel-item img {
+       width: 100%;
+       } 
+     .carousel-item {
+       height: 300px;
+       overflow: hidden;
+       width: 100%;
+     }
+       .email-row{ 
+       width:auto; 
+       border: solid 3px hotpink; 
+       height:100vh;
+      }
+     .row{ 
+       padding: 15px;   
+       width:auto; 
+       border: solid 3px hotpink; 
+       margin:10px;
+       height:100vh;
+       }
+       #button-row{ 
+         display: flex;  
+       } 
+     .button-div { 
+      border: solid 2px white; 
+     } 
+      .btn.btn-margin{   
+          margin-right:3.0rem;
+          margin-left:3.0rem;
+          margin-top:0;
+          font-size:15px;
+          width:100%;   
+          padding:7.5%; 
+     }
+     #view {  
+       background-color: #FFAABB;
+       height:auto;
+       padding-top:10px;
+     }  
+     .col-md-6{ 
+     padding:5px;
+     } 
+       .nav-item{ 
+     margin:10px; 
+       }
+     
+     #email{ 
+         width:100%; 
+         margin-top:0;   
+     } 
+     form{  
+       margin-top:0;
+       background-color:#FCE3F1;
+       display: flex; 
+       flex-direction: column; 
+       align-content: center;
+       } 
+       #main-submit{  
+       width: 100%;  
+       }     
+       .products-row{  
+         display:flex;
+         flex-direction: column; 
+         justify-content: space-evenly;
+         background-color: #FFD6DA;
+     }
+         figure img{ 
+         filter:blur(2px);
+       }
+       figure:hover img{filter:blur(0);
+       } 
+     hr{ 
+       margin:5px; 
+       } 
+     section{ 
+       overflow: auto;
+         }
+       .img-container{
+       font-family: 'Noto Serif', serif;
+       padding:10px;
+       position: relative;
+       text-align: center; 
+       color:black; 
+       font-weight: 500;
+       font-size:32px;
+     } 
+     .centered{
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%, -50%);  
+     } 
+     footer{
+     background-color:#789CCE; 
+     font-family:'Oxygen', sans-serif; 
+     }
+     footer .container-fluid{width:100vw;}
   }
-
-
-
 /*smartphones (portrait and landscape)*/ 
 @media only screen and (min-device-width : 320xpx) and (max-device-width: 480px) { 
 #header-title{
@@ -1111,109 +1338,106 @@ justify-content: space-evenly;
  } 
 
 } 
-/*portrait*/
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) {
-#header-title{
-display:none;
+  /*portrait*/
+ @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) {
+ #header-title{
+ display:none;
+ }
+ .logo{
+   font-family: 'Oxygen';
+  } 
+ #top-view {  
+ background-color: #FFC6D0;
+ height:auto;
+ padding-top:10px; 
+ margin-top:0;
+ }  
+.top-view-col{
+ margin-right:10rem; 
+ padding:0;
+} 
+  .carousel-caption{ 
+   padding-bottom:15px;
+ }
+.carousel-item img {
+  width: 100%;
+  } 
+.carousel-item {
+  height: 300px;
+  overflow: hidden;
+  width: 100%;
 }
-#top-view {  
-background-color: #FFC6D0;
-height:auto;
-padding-top:10px; 
-margin-top:0;
+  .email-row{ 
+  width:auto; 
+  border: solid 3px hotpink; 
+  height:100vh;
+ }
+.row{ 
+  padding: 15px;   
+  width:auto; 
+  border: solid 3px hotpink; 
+  margin:10px;
+  height:100vh;
+  }
+  #button-row{ 
+    display: flex;  
+  } 
+.button-div { 
+ border: solid 2px white; 
+} 
+ .btn.btn-margin{   
+     margin-right:3.0rem;
+     margin-left:3.0rem;
+     margin-top:0;
+     font-size:15px;
+     width:100%;   
+     padding:7.5%; 
+}
+#view {  
+  background-color: #FFAABB;
+  height:auto;
+  padding-top:10px;
 }  
- .top-view-col{
-  margin-right:10rem; 
-  padding:0;
-  } 
-.carousel-caption{ 
-    padding-bottom:15px;
-  }
-  .carousel-item img {
-   width: 100%;
-   } 
-  .carousel-item {
-    height: 300px;
-    overflow: hidden;
-    width: 100%;
-  }
-   .email-row{ 
-   width:auto; 
-   border: solid 3px hotpink; 
-   height:100vh;
-}
- .row{ 
-   padding: 15px;   
-    width:auto; 
-    border: solid 3px hotpink; 
-    margin:10px;
-    height:100vh;
-}
-#button-row{ 
-  display: flex;  
+.col-md-6{ 
+padding:5px;
 } 
-  .button-div { 
-border: solid 2px white; 
-  } 
-.btn.btn-margin{   
-    margin-right:3.0rem;
-    margin-left:3.0rem;
-    margin-top:0;
-    font-size:15px;
-    width:100%; 
-    padding:7.5%; 
-} 
-
-
-
-  #view {  
-    background-color: #FFAABB;
-    height:auto;
-    padding-top:10px;
-} 
-  
-  .col-md-6{ 
-  padding:5px;
-} 
-
-.nav-item{ 
-  margin:10px; 
+  .nav-item{ 
+margin:10px; 
   }
 
 #email{ 
     width:100%; 
     margin-top:0;   
-  } 
-
-  form{  
-    margin-top:0;
-    background-color:#FCE3F1;
-    display: flex; 
-    flex-direction: column; 
-    align-content: center;
 } 
-#main-submit{  
-    width: 100%;  
-}     
-.products-row{  
-  display:flex;
+form{  
+  margin-top:0;
+  background-color:#FCE3F1;
+  display: flex; 
   flex-direction: column; 
-  justify-content: space-evenly;
-  background-color: #FFD6DA;
-  }
-  figure img{ 
-  filter:blur(2px);
+  align-content: center;
+  } 
+  #main-submit{  
+  width: 100%;  
+  }     
+  .products-row{  
+    display:flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    background-color: #FFD6DA;
 }
-figure:hover img{filter:blur(0);
-} 
- hr{ 
-   margin:5px; 
-} 
-  
-  section{ 
-overflow: auto;
+    figure img{ 
+    filter:blur(2px);
   }
-.img-container{
+  figure:hover img{filter:blur(0);
+  } 
+hr{ 
+  margin:5px; 
+  } 
+section{ 
+  overflow: auto;
+    }
+  .img-container{
+  font-family: 'Noto Serif', serif;
   padding:10px;
   position: relative;
   text-align: center; 
@@ -1227,8 +1451,10 @@ overflow: auto;
   left:50%;
   transform:translate(-50%, -50%);  
 } 
-footer{background-color:#789CCE; }
-
+footer{
+background-color:#789CCE; 
+font-family:'Oxygen', sans-serif; 
+}
 footer .container-fluid{width:100vw;}
 
   }
@@ -1241,7 +1467,122 @@ footer .container-fluid{width:100vw;}
   }
   
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
+  #header-title{
+    display:none;
+    }
+    .logo{
+      font-family: 'Oxygen';
+     } 
+    #top-view {  
+    background-color: #FFC6D0;
+    height:auto;
+    padding-top:10px; 
+    margin-top:0;
+    }  
+   .top-view-col{
+    margin-right:10rem; 
+    padding:0;
+   } 
+     .carousel-caption{ 
+      padding-bottom:15px;
+    }
+   .carousel-item img {
+     width: 100%;
+     } 
+   .carousel-item {
+     height: 300px;
+     overflow: hidden;
+     width: 100%;
+   }
+     .email-row{ 
+     width:auto; 
+     border: solid 3px hotpink; 
+     height:100vh;
+    }
+   .row{ 
+     padding: 15px;   
+     width:auto; 
+     border: solid 3px hotpink; 
+     margin:10px;
+     height:100vh;
+     }
+     #button-row{ 
+       display: flex;  
+     } 
+   .button-div { 
+    border: solid 2px white; 
+   } 
+    .btn.btn-margin{   
+        margin-right:3.0rem;
+        margin-left:3.0rem;
+        margin-top:0;
+        font-size:15px;
+        width:100%;   
+        padding:7.5%; 
+   }
+   #view {  
+     background-color: #FFAABB;
+     height:auto;
+     padding-top:10px;
+   }  
+   .col-md-6{ 
+   padding:5px;
+   } 
+     .nav-item{ 
+   margin:10px; 
+     }
+   
+   #email{ 
+       width:100%; 
+       margin-top:0;   
+   } 
+   form{  
+     margin-top:0;
+     background-color:#FCE3F1;
+     display: flex; 
+     flex-direction: column; 
+     align-content: center;
+     } 
+     #main-submit{  
+     width: 100%;  
+     }     
+     .products-row{  
+       display:flex;
+       flex-direction: column; 
+       justify-content: space-evenly;
+       background-color: #FFD6DA;
+   }
+       figure img{ 
+       filter:blur(2px);
+     }
+     figure:hover img{filter:blur(0);
+     } 
+   hr{ 
+     margin:5px; 
+     } 
+   section{ 
+     overflow: auto;
+       }
+     .img-container{
+     font-family: 'Noto Serif', serif;
+     padding:10px;
+     position: relative;
+     text-align: center; 
+     color:black; 
+     font-weight: 500;
+     font-size:32px;
+   } 
+   .centered{
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%, -50%);  
+   } 
+   footer{
+   background-color:#789CCE; 
+   font-family:'Oxygen', sans-serif; 
+   }
+   footer .container-fluid{width:100vw;}
   } 
 
 /***************************************************************************************************************************************************
@@ -1252,7 +1593,122 @@ footer .container-fluid{width:100vw;}
   }
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
+    #header-title{
+      display:none;
+      }
+      .logo{
+        font-family: 'Oxygen';
+       } 
+      #top-view {  
+      background-color: #FFC6D0;
+      height:auto;
+      padding-top:10px; 
+      margin-top:0;
+      }  
+     .top-view-col{
+      margin-right:10rem; 
+      padding:0;
+     } 
+       .carousel-caption{ 
+        padding-bottom:15px;
+      }
+     .carousel-item img {
+       width: 100%;
+       } 
+     .carousel-item {
+       height: 300px;
+       overflow: hidden;
+       width: 100%;
+     }
+       .email-row{ 
+       width:auto; 
+       border: solid 3px hotpink; 
+       height:100vh;
+      }
+     .row{ 
+       padding: 15px;   
+       width:auto; 
+       border: solid 3px hotpink; 
+       margin:10px;
+       height:100vh;
+       }
+       #button-row{ 
+         display: flex;  
+       } 
+     .button-div { 
+      border: solid 2px white; 
+     } 
+      .btn.btn-margin{   
+          margin-right:3.0rem;
+          margin-left:3.0rem;
+          margin-top:0;
+          font-size:15px;
+          width:100%;   
+          padding:7.5%; 
+     }
+     #view {  
+       background-color: #FFAABB;
+       height:auto;
+       padding-top:10px;
+     }  
+     .col-md-6{ 
+     padding:5px;
+     } 
+       .nav-item{ 
+     margin:10px; 
+       }
+     
+     #email{ 
+         width:100%; 
+         margin-top:0;   
+     } 
+     form{  
+       margin-top:0;
+       background-color:#FCE3F1;
+       display: flex; 
+       flex-direction: column; 
+       align-content: center;
+       } 
+       #main-submit{  
+       width: 100%;  
+       }     
+       .products-row{  
+         display:flex;
+         flex-direction: column; 
+         justify-content: space-evenly;
+         background-color: #FFD6DA;
+     }
+         figure img{ 
+         filter:blur(2px);
+       }
+       figure:hover img{filter:blur(0);
+       } 
+     hr{ 
+       margin:5px; 
+       } 
+     section{ 
+       overflow: auto;
+         }
+       .img-container{
+       font-family: 'Noto Serif', serif;
+       padding:10px;
+       position: relative;
+       text-align: center; 
+       color:black; 
+       font-weight: 500;
+       font-size:32px;
+     } 
+     .centered{
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%, -50%);  
+     } 
+     footer{
+     background-color:#789CCE; 
+     font-family:'Oxygen', sans-serif; 
+     }
+     footer .container-fluid{width:100vw;}
   }
   
   /* Samsung Galaxy S4*/
@@ -1261,7 +1717,122 @@ footer .container-fluid{width:100vw;}
   }
   
   @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
+    #header-title{
+      display:none;
+      }
+      .logo{
+        font-family: 'Oxygen';
+       } 
+      #top-view {  
+      background-color: #FFC6D0;
+      height:auto;
+      padding-top:10px; 
+      margin-top:0;
+      }  
+     .top-view-col{
+      margin-right:10rem; 
+      padding:0;
+     } 
+       .carousel-caption{ 
+        padding-bottom:15px;
+      }
+     .carousel-item img {
+       width: 100%;
+       } 
+     .carousel-item {
+       height: 300px;
+       overflow: hidden;
+       width: 100%;
+     }
+       .email-row{ 
+       width:auto; 
+       border: solid 3px hotpink; 
+       height:100vh;
+      }
+     .row{ 
+       padding: 15px;   
+       width:auto; 
+       border: solid 3px hotpink; 
+       margin:10px;
+       height:100vh;
+       }
+       #button-row{ 
+         display: flex;  
+       } 
+     .button-div { 
+      border: solid 2px white; 
+     } 
+      .btn.btn-margin{   
+          margin-right:3.0rem;
+          margin-left:3.0rem;
+          margin-top:0;
+          font-size:15px;
+          width:100%;   
+          padding:7.5%; 
+     }
+     #view {  
+       background-color: #FFAABB;
+       height:auto;
+       padding-top:10px;
+     }  
+     .col-md-6{ 
+     padding:5px;
+     } 
+       .nav-item{ 
+     margin:10px; 
+       }
+     
+     #email{ 
+         width:100%; 
+         margin-top:0;   
+     } 
+     form{  
+       margin-top:0;
+       background-color:#FCE3F1;
+       display: flex; 
+       flex-direction: column; 
+       align-content: center;
+       } 
+       #main-submit{  
+       width: 100%;  
+       }     
+       .products-row{  
+         display:flex;
+         flex-direction: column; 
+         justify-content: space-evenly;
+         background-color: #FFD6DA;
+     }
+         figure img{ 
+         filter:blur(2px);
+       }
+       figure:hover img{filter:blur(0);
+       } 
+     hr{ 
+       margin:5px; 
+       } 
+     section{ 
+       overflow: auto;
+         }
+       .img-container{
+       font-family: 'Noto Serif', serif;
+       padding:10px;
+       position: relative;
+       text-align: center; 
+       color:black; 
+       font-weight: 500;
+       font-size:32px;
+     } 
+     .centered{
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%, -50%);  
+     } 
+     footer{
+     background-color:#789CCE; 
+     font-family:'Oxygen', sans-serif; 
+     }
+     footer .container-fluid{width:100vw;}
   }
   
   /* Samsung Galaxy S5 */
@@ -1270,7 +1841,122 @@ footer .container-fluid{width:100vw;}
   }
   
   @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
+    #header-title{
+      display:none;
+      }
+      .logo{
+        font-family: 'Oxygen';
+       } 
+      #top-view {  
+      background-color: #FFC6D0;
+      height:auto;
+      padding-top:10px; 
+      margin-top:0;
+      }  
+     .top-view-col{
+      margin-right:10rem; 
+      padding:0;
+     } 
+       .carousel-caption{ 
+        padding-bottom:15px;
+      }
+     .carousel-item img {
+       width: 100%;
+       } 
+     .carousel-item {
+       height: 300px;
+       overflow: hidden;
+       width: 100%;
+     }
+       .email-row{ 
+       width:auto; 
+       border: solid 3px hotpink; 
+       height:100vh;
+      }
+     .row{ 
+       padding: 15px;   
+       width:auto; 
+       border: solid 3px hotpink; 
+       margin:10px;
+       height:100vh;
+       }
+       #button-row{ 
+         display: flex;  
+       } 
+     .button-div { 
+      border: solid 2px white; 
+     } 
+      .btn.btn-margin{   
+          margin-right:3.0rem;
+          margin-left:3.0rem;
+          margin-top:0;
+          font-size:15px;
+          width:100%;   
+          padding:7.5%; 
+     }
+     #view {  
+       background-color: #FFAABB;
+       height:auto;
+       padding-top:10px;
+     }  
+     .col-md-6{ 
+     padding:5px;
+     } 
+       .nav-item{ 
+     margin:10px; 
+       }
+     
+     #email{ 
+         width:100%; 
+         margin-top:0;   
+     } 
+     form{  
+       margin-top:0;
+       background-color:#FCE3F1;
+       display: flex; 
+       flex-direction: column; 
+       align-content: center;
+       } 
+       #main-submit{  
+       width: 100%;  
+       }     
+       .products-row{  
+         display:flex;
+         flex-direction: column; 
+         justify-content: space-evenly;
+         background-color: #FFD6DA;
+     }
+         figure img{ 
+         filter:blur(2px);
+       }
+       figure:hover img{filter:blur(0);
+       } 
+     hr{ 
+       margin:5px; 
+       } 
+     section{ 
+       overflow: auto;
+         }
+       .img-container{
+       font-family: 'Noto Serif', serif;
+       padding:10px;
+       position: relative;
+       text-align: center; 
+       color:black; 
+       font-weight: 500;
+       font-size:32px;
+     } 
+     .centered{
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform:translate(-50%, -50%);  
+     } 
+     footer{
+     background-color:#789CCE; 
+     font-family:'Oxygen', sans-serif; 
+     }
+     footer .container-fluid{width:100vw;}
   } 
 
   footer .container-fluid{width:100vw;} 

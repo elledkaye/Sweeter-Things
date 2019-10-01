@@ -75,29 +75,57 @@
       
             </div> 
 <!--Content-->  
-<h2 class="font-weight-bold text-center"> Order Cupcakes and More</h2> 
-<div class="order-col col-md-6 d-flex flex-col">
-<div class="order-content"> 
-   <ul>  
-     <h3>Cupcakes/Macarroons/Donuts</h3>
-     <li>Pickup</li> 
-     <li>Delivery</li> 
-     <li>Shipping</li> 
-   </ul>
-
-
-<div class="col-md-4 container-fluid"> 
-     <div>
-     <h4>CAKE</h4>
-    <h4> CUPCAKES</h4> 
-    
-    <h4> DOUGHNUTS </h4> 
-
-    <h4>Macaroons</h4> 
-    <h4>Vegan Options</h4> 
+<div class="container-fluid justify-content-center"> 
+  <div class="row"> 
+<div class="header col-md-4 text-center">
+  <h4 class="text-uppercase font-weight-bold">Order Cupcakes & More</h4>
+</div> 
+<div class="row justify-content-center">
+    <div class=" col-4 "> 
+       <button type="button" mdbBtn rounded = true style="background-color:#FFAABB;"> <mdb-icon fas icon="mobile-alt" size="2x" class="mx-2"></mdb-icon>Pickup</button>
+  
+    </div> 
+    <div class="col-4"> 
+       <button type="button" (click)="orderModal.show()" mdbBtn rounded = "true" style="background-color:#FFAABB;" > <mdb-icon fas icon="taxi" size="2x" class="mx-2"></mdb-icon>Delivery</button>
+    </div> 
+   
   </div>
-</div>
-</div>
+    <div class="col-md container-fluid text-center"> 
+      <hr/>
+   <h4>Pick up times</h4>  
+   <ul> 
+     <li>Monday - Thursday:8:30AM - 9:30PM</li> 
+     <li>Friday - Saturday:8:00AM - 10:00PM</li> 
+     <li>Sunday:9:00AM - 9:30PM</li>
+     <li><a href="#"> Pickup Rules & Information</a></li>
+   </ul>
+   <hr/>
+   <h4> Delivery times</h4>
+<ul> 
+  <li>Monday - Saturday:12:00PM - 12:00AM</li>  
+  <li>Sunday:10:00AM - 11:00PM</li> 
+  <li><a (click)="deliveryModal.show()">Delivery Rules & Information</a></li>  
+  
+</ul>
+<div mdbModal #deliveryModal="mdbModal" class="modal fade" tabindex="-1" role="contentinfo" aria-labelledby="DeliveryModalLabel" aria-hidden="true"> 
+    <div class="modal-content"> 
+      <div class="modal-header"> 
+        <h5 class="modal-title">Delivery Information</h5> 
+        <button type="button" class="close pull-right" aria-label="Close" (click)="deliveryModal.hide()"> 
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+    <div class="modal-body"> 
+
+    </div>
+
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+</div> 
     <!--Footer-->
     <footer class="page-footer font-small pt-4" style="font-family:'Source Sans Pro', serif;">
         <h6 class="text-uppercase font-weight-bold mb-4">#SweeterthingsnLife</h6>
@@ -179,6 +207,38 @@
       <div class="col-md-4 container-fluid">
           <img class="img-fluid rounded mx-auto d-block mb-3 z-depth-2" src="./assets/img/donutbundle.jpeg"> 
           <h4 class="text-center" style="font-family: 'Playfair Display', serif;">Doughnut Bundle <br>(6)</h4> 
-          <h3 class="text-center" style="font-family: 'Source Sans Pro', serif;">$10.00</h3> -->
+          <h3 class="text-center" style="font-family: 'Source Sans Pro', serif;">$10.00</h3>  
+        
+        
+        
+        
+        
+        <div class="order-col col-md-6 d-flex flex-col">
+<div class="order-content">  
+  <div class="col-sm-9 col-md-9"> 
+    <div class="row"> 
+        <h2 class="font-weight-bold text-center"> Order Cupcakes and More</h2> 
+    </div>
+   <ul>  
+     <h3>Cupcakes/Macarroons/Donuts</h3>
+     <li><mdb-icon fas icon="mobile-alt" size="2x"></mdb-icon>Pickup</li> 
+     <li><mdb-icon fas icon="taxi" size="2x"></mdb-icon>Delivery</li> 
+     <li>Shipping</li> 
+   </ul>
+
+
+<div class="col-md-4 container-fluid"> 
+     <div>
+     <h4>CAKE</h4>
+    <h4> CUPCAKES</h4> 
+    
+    <h4> DOUGHNUTS </h4> 
+
+    <h4>Macaroons</h4> 
+    <h4>Vegan Options</h4> 
+  </div>
+</div>
+</div>
+</div>-->
          
-        </div> 
+        

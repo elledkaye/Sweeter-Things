@@ -4,9 +4,24 @@
   } 
 /*portrait*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) {  
-hr{margin:5px;}
-.order-col{
-  flex-direction: column; 
+hr{margin:5px; 
+}
+.container-fluid{
+  background-color:#FCE3F1 
+}
+  .row{ 
+  border:solid 2px black; 
+} 
+
+.header{ 
+  background-color:mintcream;
+  padding:5px;
+  margin-top:5px;
+  border: solid 2px blue; 
+}
+  .order-col{
+  flex-direction: column;  
+  border:solid 2px purple;
 }
 .order-content{
   width:100vw;
