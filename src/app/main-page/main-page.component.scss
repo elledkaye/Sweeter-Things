@@ -499,45 +499,57 @@ background: #BED3A2;
 /***************************************************************************************************************************************************
 ****************************************************************************************************************************************************/
 /* Desktops and laptops */
-@media only screen  and (min-width : 1224px) {
+@media only screen  and (min-device-width: 1224px) and (max-device-width:1600px) {
   .heading {
     margin: 0 5rem;
     font-weight: 300;
     color:blue;
-   }   
-
-  #header-title{
-    display:none;
-    }
-    #top-view {  
-    background-color: #FFAABB;
-    background-image: url(/assets/img/background1.jpeg);
-    height:auto;
-    padding-top:10px; 
-    margin-top:0;
-   }  
-    .top-view-col{
-    margin-right:10rem; 
-    padding:0;
-    }
-
-  .carousel{ 
-  border:solid 2px purple; 
+  }   
+#header-title{
+  display:none;
+  }
+  button{
+    font-family: 'Oxygen';
+  }
+  .logo{
+    font-family: 'Oxygen';
+   } 
+  #top-view { 
+  background-color: #FFAABB;
+  height:auto;
+  padding-top:10px; 
+  margin-top:0;
+  }  
+  .top-view-col{
+  border:solid 3px hotpink;
+  padding:0;
+  justify-content: center;
+  margin-left:15rem;
+  } 
+  .top-view-col article{ 
+    border:solid 4px navy;
+    padding:10px; 
+    margin-right:10%;
+    font-size: 20px;
+  }
+.media img{
+  height:auto;
 }
+.carousel{ 
+    height:40vh;
+    border:solid 2px purple; 
+   }
   .carousel-item {
   height: 600px;
   overflow: hidden;
-  width: 70vw;
     }
-  .carousel-item img {
-   width: 200%;
-   } 
    #button-row{ 
     border: solid 3px orange;  
     display: flex;   
+    justify-content:center;
     } 
     .button-div{ 
-      border: solid 2px white; 
+      border: solid 2px white;
     } 
     .btn.btn-margin{  
       align-self:center; 
@@ -613,16 +625,10 @@ background: #BED3A2;
     }
   #view {  
     background-color: #FFAABB;
-  
     height:auto;
     padding-top:10px;
    } 
-  .col-md-6{ 
-    padding:5px;
-    border: 3px solid limegreen; 
-  } 
- 
-  .nav-item{ 
+   .nav-item{ 
     margin:10px; 
   }  
   .img-container{
@@ -659,7 +665,7 @@ background: #BED3A2;
   
     }
   
-  
+
 /***************************************************************************************************************************************************
 ****************************************************************************************************************************************************/
   /* Large screens ----------- */
@@ -674,14 +680,9 @@ background: #BED3A2;
   #header-title{
     display:none;
     }
-  
-  #top-view {  
-    background-color: #FFC4E0;
-    height:auto;
-    padding-top:10px; 
-    margin-top:0;
-    } 
-    
+    .logo{
+      font-family: 'Oxygen';
+     } 
     #top-view {  
       background-color: #FFAABB;
       height:auto;
@@ -690,8 +691,12 @@ background: #BED3A2;
      } 
 
      .top-view-col{
+      border:solid 3px hotpink;
+      padding:0;
+      justify-content: center;
+      margin-left:15rem;
       margin-right:10rem; 
-     padding:0;
+     
      }
      .carousel{ 
       border:solid 2px purple; 
@@ -724,31 +729,31 @@ background: #BED3A2;
      }
 
      #button-row{ 
-     
-       border:2px solid black;
-      display: flex;  
+      border: solid 3px orange;  
+      display: flex;   
+      justify-content:center; 
       } 
   .btn.btn-margin{ 
-    border:2px solid black;
-    align-self: center;
-    margin-top:0;
-    font-size:15px;
-    width:100%; 
-    padding:7.5%; 
-    }
-
-    #view {  
-      background-color: #FFAABB;
-      height:auto;
-      padding-top:10px;
-      } 
-
-      .col-md-6{ 
-        padding:5px;
-          } 
-          .nav-item{ 
-            margin:10px; 
-          } 
+    align-self:center; 
+      border: solid 3px orange;
+     margin-right:3.0rem;
+     margin-left:3.0rem;
+     margin-top:0;
+     font-size:15px;
+     width:100%; 
+     padding:7.5%; 
+  }
+  #view {  
+    background-color: #FFAABB;
+    height:auto;
+    padding-top:10px;
+  } 
+  .col-md-6{ 
+    padding:5px;
+    } 
+  .nav-item{ 
+    margin:10px; 
+    } 
 
           #email{ 
             width:100%; 
@@ -826,6 +831,11 @@ background: #BED3A2;
       .logo{
         font-family: 'Oxygen';
        } 
+       button{
+        font-family: 'Oxygen';
+      }
+ ul li{ 
+  font-family: 'Oxygen';}
       #top-view {  
       background-color: #FFC6D0;
       height:auto;
@@ -1340,25 +1350,23 @@ justify-content: space-evenly;
 } 
   /*portrait*/
  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) {
- #header-title{
- display:none;
- }
- .logo{
-   font-family: 'Oxygen';
+  .logo{
+  font-family: 'Oxygen';
+    } 
+  #top-view {  
+  background-color: #FFC6D0;
+  height:auto;
+  padding-top:10px; 
+  margin-top:0;
+  }  
+  .top-view-col{
+  text-align: center;
+  margin-right:10rem; 
+  padding:0;
   } 
- #top-view {  
- background-color: #FFC6D0;
- height:auto;
- padding-top:10px; 
- margin-top:0;
- }  
-.top-view-col{
- margin-right:10rem; 
- padding:0;
-} 
-  .carousel-caption{ 
-   padding-bottom:15px;
- }
+.carousel-caption{ 
+  padding-bottom:15px;
+}
 .carousel-item img {
   width: 100%;
   } 
@@ -1377,14 +1385,10 @@ justify-content: space-evenly;
   width:auto; 
   border: solid 3px hotpink; 
   margin:10px;
-  height:100vh;
   }
   #button-row{ 
     display: flex;  
   } 
-.button-div { 
- border: solid 2px white; 
-} 
  .btn.btn-margin{   
      margin-right:3.0rem;
      margin-left:3.0rem;
@@ -1452,8 +1456,10 @@ section{
   transform:translate(-50%, -50%);  
 } 
 footer{
+height:100vh;
 background-color:#789CCE; 
 font-family:'Oxygen', sans-serif; 
+font-size:18px;
 }
 footer .container-fluid{width:100vw;}
 
@@ -1462,15 +1468,13 @@ footer .container-fluid{width:100vw;}
 /***************************************************************************************************************************************************
 ****************************************************************************************************************************************************/
 /* iPhone XS Max, XR*/
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+ @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   /* Styles */
-  }
+}
+ 
+ @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
   
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  #header-title{
-    display:none;
-    }
-    .logo{
+    .logo, button{
       font-family: 'Oxygen';
      } 
     #top-view {  

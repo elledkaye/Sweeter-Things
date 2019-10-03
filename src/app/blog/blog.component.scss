@@ -37,6 +37,22 @@
 
   /*portrait*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) {
+ h2, h3, h6{ 
+   font-family:'Oxygen'; 
+   } 
+   p{ 
+     font-family: 'Noto Serif';
+   }
+
+   button{
+     font-family: 'Oxygen';
+   }
+   .logo{
+    font-family: 'Oxygen';
+   } 
+   
+ ul li{ 
+  font-family: 'Oxygen';}
   hr{ 
     margin:5px; 
  }  
@@ -45,20 +61,27 @@
 }   
 .contribute-btn{ 
   margin-left:5rem;
-  border:solid 3px black;
   display: flex;
  }
-  .contribute-btn button{ 
-  align-self: center; 
-} 
-form .form-group .form-control #message-content{ 
-height:50%;
-}
-  .blog-content{ 
+.contribute-btn button{ 
+    align-self: center; 
+  } 
+  form .form-group .form-control #message-content{ 
+  height:50%;
+  }
+.blog-content{ 
+padding:5px;
 border:solid 2px lime; 
-background-color: #FFAABB;
+background-color: #FFD6DA;
   } 
 .row{ 
 border:solid 4px blue; 
 padding:10px;}
+
+footer{
+  background-color:#789CCE; 
+  font-family:'Oxygen', sans-serif; 
+  }
+  footer .container-fluid{width:100vw;}
+ 
 } 

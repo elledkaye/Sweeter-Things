@@ -75,11 +75,12 @@
   </header>
   <div class="blog-content">  
     <h2 class="h1-responsive font-weight-bold text-center">Hello Friends!</h2>
-    <h3 class="text-center w-responsive mx-auto font-weight-bold">Thanks for stopping by...</h3> 
+    <h3 class="text-center w-responsive mx-auto">Thanks for stopping by!</h3> 
   <p class="text-center w-responsive mx-auto" style="font-family: Catamaran"> Have a suggestion? Want to Contribute?</p> 
+  
     <!--contact modal-->
   <div class="contribute-btn">
-       <button type="button" style="background-color:#789CCE; font-family: Catamaran; font-weight: bold; color:white;"class="text-center" (click)="thisModal.show()" mdbBtn> I have a post</button> 
+       <button type="button" style="background-color:#789CCE; color:white;"class="text-center" (click)="thisModal.show()" mdbBtn> I have a post</button> 
       </div>
       <!--./contribute-btn-->
       <div mdbModal #thisModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="ThisModalLabel" aria-hidden="true"> 
@@ -125,10 +126,10 @@
             </div>
       
            </div> 
-      
-        
-    <p class="text-center w-responsive mx-auto mb-5 " style="font-family: Catamaran;">Simply message us with the content & once reviewed your post will be published!</p> 
-  <div> 
+    <p class="text-center w-responsive mx-auto  mb-2"> 
+      Simply message us with the content & once reviewed your post will be published!</p> 
+    <h6 class="text-center">Blog Contributing information</h6>   
+      <div> 
   <!-- Section: Blog v.1 -->
   <section class="">
    <!-- Section heading --> 
@@ -159,9 +160,6 @@
       <div class="col-lg-7">
   
         <!-- Category -->
-       <!--  <a href="#!" class="green-text">
-          <h6 class="font-weight-bold mb-3"><mdb-icon fas icon="utensils" class="pr-2"></mdb-icon>Food</h6>
-        </a>-->
         <!-- Post title -->
         <h3 class="font-weight-bold mb-3" style="color:#D1EAF5;"><strong>Healthy Cupcakes!?</strong></h3>
         <!-- Excerpt -->
@@ -396,7 +394,7 @@
   
         <!-- Featured image -->
         <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
-          <img class="img-fluid" src="./assets/img/doughnutblog1.jpeg" alt="Sample image">
+          <img class="img-fluid" src="./assets/img/cupcakespread2.jpeg" alt="Sample image">
           <a>
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -479,66 +477,91 @@
 
     <!--Footer-->
     <footer class="page-footer font-small pt-4" style="font-family:'Source Sans Pro', serif;">
-        <h6 class="text-uppercase font-weight-bold mb-4">#SweeterthingsnLife</h6>
-                <!--Footer Links (1)--> 
-                <div class="container text-center text-md-left">   
-                    <h6 class="text-uppercase mb-4 font-weight-bold">footer links</h6>
-        
-                    <!--Footer Links (2)--> 
-                    <div class="row text-center text-md-left mt-3 pb-3"> 
-                        <h6 class="text-uppercase mb-4 font-weight-bold">footer links</h6> 
-        
-                        <!--Grid column (1)-->
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">  
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Title</h6>
-        
-                        </div>
-                        <!--Closing tag for grid column (1)--> 
-        
-                        <hr class="w-100 clearfix d-md-none"> 
-        
-                        <!--Grid column (2)--> 
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">   
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-        
-                        </div> 
-                        <!--Closing tag for grid column (2)--> 
-                    
-        
-                    </div> 
-                    <!--Closing tag for footer links 2--> 
-        
-                    <!--Grid row (1)--> 
-                    <div class="row d-flex align-items-center"> 
-                    
-                        <!--Grid column (5)--> 
-                        <div col-md-7 col-lg-8> 
-                            <p class="text-center text-md-left"> Copyright</p> 
-        
-                        </div> 
-                        <!--Closing tag of grid column (5)--> 
-        
-                        <!--Grid column (6)-->
-                        <div>  
-        
-                            <!--Social Buttons--> 
-                            <div> 
-        
-                            </div>
-        
-                        </div> 
-                        <!--Closing tag for grid column (6)-->
-                         
-        
-                    </div> 
-                    <!--Closing tag for grid row (1)-->
-        
-        
-                </div>
-                <!--Closing tag for footer links 1--> 
-        
-        
-            </footer>
+        <!--Footer Links (1)--> 
+        <div class="container-fluid text-center text-md-left">   
+            <h6 class="text-uppercase mb-4 font-weight-bold">footer links</h6>
+            <!--Footer Links (2)--> 
+            <div class="footer-row text-center text-md-left "> 
+                  <!--Grid column (0)-->                      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">  
+                    <h6 class="text-uppercase mb-2 font-weight-bold">sweeter thing n life</h6> 
+                    <p> 
+                      About
+                    </p> 
+                    <p> 
+                      Order
+                    </p> 
+                    <p> 
+         Catering
+         </p> 
+<p> 
+Hours & Locations
+</p> 
+<p> Contact</p> 
+<p>Employment</p> 
+                  </div>
+                  <!--Grid column (1)-->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">  
+                   
+                    <h6 class="text-uppercase mb-2 font-weight-bold">Contact</h6>
+                    <p>
+                      <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p>
+                      <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                    <p>
+                      <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                      <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+         
+                  </div>
+                  <!--Closing tag for grid column (1)--> 
+  
+                  <hr class="w-100 clearfix d-md-none"> 
+  
+                  <!--Grid column (2)--> 
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Title</h6>
+                  <p>Lorem ipsum dolor sit amet,
+                      consectetur
+                      adipisicing elit.</p>
+                    </div>
+                  <!--Closing tag for grid column (2)--> 
+                 
+  
+              </div> 
+              <!--Closing tag for footer links 2--> 
+  
+              <!--Grid row (1)--> 
+              <div class="footer-row d-flex align-items-center"> 
+              
+                  <!--Grid column (5)--> 
+                  <div col-md-7 col-lg-8> 
+                      <p class="text-center text-md-left"> Copyright</p> 
+  
+                  </div> 
+                  <!--Closing tag of grid column (5)--> 
+  
+                  <!--Grid column (6)-->
+                  <div>  
+  
+                      <!--Social Buttons--> 
+                      <div> 
+  
+                      </div>
+  
+                  </div> 
+                  <!--Closing tag for grid column (6)-->
+                   
+  
+              </div> 
+              <!--Closing tag for grid row (1)-->
+  
+  
+          </div>
+          <!--Closing tag for footer links 1--> 
+  
+  
+      </footer>
+
          
           </div>
           <!--End of container-->

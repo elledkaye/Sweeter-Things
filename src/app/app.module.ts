@@ -11,7 +11,6 @@ import {MainPageComponent} from './main-page/main-page.component';
 import { ContactComponent } from './contact/contact.component'
 import { BlogComponent } from './blog/blog.component';
 import { OrderComponent } from './order/order.component';
-import { ProductPageComponent } from './product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +19,8 @@ import { ProductPageComponent } from './product-page/product-page.component';
     MainPageComponent,
     ContactComponent,
     BlogComponent,
-    OrderComponent,
-    ProductPageComponent
-   
+    OrderComponent
+  
   ],
   imports: [
     AccordionModule,

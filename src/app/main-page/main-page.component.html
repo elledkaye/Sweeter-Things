@@ -1,17 +1,14 @@
 
 <!-- Main navigation -->
 <header>      
-    <div> 
-      <div id="header-title">
-        <h2 class="text-uppercase">Sweeter things N Life</h2>
-      </div>
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo lighten-2 ie-nav"  [containerInside]="false">
-  <mdb-navbar-brand>
-    <a class="logo navbar-brand font-weight-bold" href="main-page"> Sweeter Things N' life
-    </a> 
-  </mdb-navbar-brand>
-    <links>
-      <ul class="navbar-nav mr-auto">
+  <div> 
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo lighten-2 ie-nav"  [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand font-weight-bold" href="main-page"> Sweeter Things N' life
+      </a> 
+    </mdb-navbar-brand>
+     <links>
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item active" >
             <a class="nav-link" href="#">Home 
               <span class="sr-only">(current)</span> 
@@ -74,15 +71,14 @@
         </div>
     </links>
 </mdb-navbar> 
-
-<!--Navbar-->  
+<!--./Navbar-->  
     </div> 
     <section id="top-view">  
       <div id="carousel" class="carousel slide" data-ride="carousel">
         <ngb-carousel>
              <ng-template ngbSlide>
-                  <div class="picsum-img-wrapper">
-                      <img class="img-fluid rounded mx-auto d-block" src="./assets/img/pastry1.jpeg" alt="Random first slide">
+                  <div class="media">
+                      <img class="img-fluid rounded mx-auto d-block" src="./assets/img/pastry1.jpeg"  alt="Random first slide">
                   </div>
                   <div class="centered">
                       <h3 class="font-weight-bold" style="color: white">Welcome</h3>
@@ -91,8 +87,8 @@
                   </div>
               </ng-template>
               <ng-template ngbSlide>
-                  <div class="picsum-img-wrapper"> 
-                    <img class="img-fluid rounded mx-auto d-block"  src="./assets/img/backsplashpage1.jpeg">
+                  <div class="media"> 
+                    <img class="img-fluid rounded mx-auto d-block" style="max-width: 400px" src="./assets/img/backsplashpage1.jpeg">
                   </div> 
                   <div class="centered"> 
                     <h3 style="color: black">Get Connected</h3>
@@ -105,39 +101,65 @@
                       <h3 style="color:black;" >Products</h3> 
                       <p style="color: black;">Macaroons, Cupcakes, Donuts Oh my!</p>
                     </div>
-                  <div class="picsum-img-wrapper"> 
-                    <img class="img-fluid rounded mx-auto d-block"  src="./assets/img/products.jpg">
+                  <div class="media"> 
+                    <img class="img-fluid rounded mx-auto d-block" style="max-width: 400px" src="./assets/img/products.jpg">
                   </div> 
                    
               </ng-template>
           </ngb-carousel>
         </div>
           <div id="button-row" class="button-row">   
-              <div id="button-div" class="mr-auto">
+              <div id="button-div">
                   <button type="button" id="button" mdbBtn style="background-color: #789CCE; color: white" class="btn-margin text-uppercase" ><a href="/order">Order Online</a>
                   </button> 
                    
                     </div>  
               </div> 
               <h2 class="font-weight-bold text-center" style="font-family: Oxygen;"> Let's bake the world a better place</h2> 
-              <div class="top-view-col col-md-6 d-flex flex-col"> 
+              <div class="top-view-col col-md d-flex flex-col"> 
              
-                  <article class="text-center" style="font-family: Noto Serif;"> We offer various kinds of pastrys, 
+                  <article style="font-family: Noto Serif;"> We offer various kinds of pastrys, 
                       we also offer gluten free, vegan and vegetarian friendly pastries 
                      </article>
               </div>   
               <section id="email"> 
-                  <div><mdb-icon fas icon="circle" size="2x" class="cyan-text " ></mdb-icon><mdb-icon fas icon="circle" class="cyan-text"></mdb-icon><mdb-icon fas icon="circle" size="2x" class="cyan-text "></mdb-icon><mdb-icon fas icon="circle" class="cyan-text"></mdb-icon><mdb-icon fas icon="circle" size="2x" class="cyan-text"></mdb-icon></div>
-                    <form class="border border-light p-5">  
+                <!--template driven form-->
+                  <div class="decor"><mdb-icon fas icon="circle" size="2x" class="cyan-text"></mdb-icon>
+                    <mdb-icon fas icon="circle" class="cyan-text"></mdb-icon>
+                    <mdb-icon fas icon="circle" size="2x" class="cyan-text "></mdb-icon>
+                    <mdb-icon fas icon="circle" class="cyan-text"></mdb-icon>
+                    <mdb-icon fas icon="circle" size="2x" class="cyan-text">
+                    </mdb-icon> 
+                  </div> 
+
+                  {{emailForm.value | json}}  
+                  <hr/>
+                  {{subscribeModel | json}}
+                  <hr/> 
+                  {{email.untouched}}
+                  {{email.pristine}}
+                  {{email.valid}}
+                    <form #emailForm="ngForm" class="border border-light p-5">  
                         <h4 class="text-uppercase text-center font-weight-bold" style="font-family: Oxygen;"> Join our mailing list</h4 > 
                         <p class="mb-4 text-center"> Enter your email for newsletters and coupons</p>
-                      <div >
-                       <input mdbInput type="email"  placeholder="Enter Email" id="main-submit"  class="form-control" required>
-                       
+                        <div class="form-group">
+                        <input mdbInput mdbValidate type="email" 
+                        placeholder="Enter Email"  
+                        id="main-submit" 
+                        [class.invalid]="email.invalid && email.touched"
+                        class="form-control" 
+                        required
+                        pattern="[^ @]*@[^ @]*"
+                        name="email"
+                        #email="ngModel"
+                        [(ngModel)]="subscribeModel.email"> 
+                       <!--- <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email is required</small> --> 
+                       <div *ngIf="email.errors && (email.invalid || email.touched)"> 
+                       <small class="text-danger" [class.d-none]="email.valid || email.untouched">Invalid Email</small>  
                       </div>
-                       <button type="button" id="button" mdbBtn style="background-color: #789CCE;" class="btn-submit-margin text-uppercase" disabled>submit</button>
-                 
-                   </form>
+                        </div> 
+                       <button type="button" id="button" mdbBtn style="background-color: #789CCE;" class="btn-submit-margin text-uppercase mt-5" > Submit</button>   
+                 </form>
               </section>
          
     </section> 
@@ -195,7 +217,6 @@
   <footer class="page-footer font-small pt-4" style="font-family:'Source Sans Pro', serif;">
             <!--Footer Links (1)--> 
             <div class="container-fluid text-center text-md-left">   
-                <h6 class="text-uppercase mb-4 font-weight-bold">footer links</h6>
                 <!--Footer Links (2)--> 
                 <div class="footer-row text-center text-md-left "> 
                       <!--Grid column (0)-->                      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">  
@@ -235,7 +256,7 @@
       
                       <!--Grid column (2)--> 
                       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                          <h6 class="text-uppercase mb-4 font-weight-bold">Title</h6>
+                          <h6 class="text-uppercase mb-4 font-weight-bold">Message US</h6>
                       <p>Lorem ipsum dolor sit amet,
                           consectetur
                           adipisicing elit.</p>

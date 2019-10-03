@@ -1,7 +1,7 @@
-<p>product-page works!</p>
+
 <div> 
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark pink ie-nav"  [containerInside]="false">
-    <mdb-navbar-brand>
+        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo lighten-2 ie-nav"  [containerInside]="false">
+                <mdb-navbar-brand>
                   <a class="logo navbar-brand font-weight-bold" href="main-page"> Sweeter Things N' life
                   </a> 
                 </mdb-navbar-brand>
@@ -71,17 +71,61 @@
               </mdb-navbar> 
               
               <!--Navbar-->  
+              
       
-      <mdb-carousel [isControls]="false" [animation]="'slide'">
-            <mdb-carousel-item>
-              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" alt="First slide">
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" alt="Second slide">
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" alt="Third slide">
-            </mdb-carousel-item>
-          </mdb-carousel>
-      
-            </div>
+            </div> 
+<!--Content-->  
+<div class="container-fluid justify-content-center"> 
+  <div class="row"> 
+<div class="header col-md-4 text-center">
+  <h4 class="text-uppercase font-weight-bold">Order Cupcakes & More</h4>
+</div> 
+<div class="row justify-content-center">
+    <div class=" col-4 "> 
+       <button type="button" mdbBtn rounded = true style="background-color:#FFAABB;"> <mdb-icon fas icon="mobile-alt" size="2x" class="mx-2"></mdb-icon>Pickup</button>
+  
+    </div> 
+    <div class="col-4"> 
+       <button type="button"  mdbBtn rounded = "true" style="background-color:#FFAABB;" > <mdb-icon fas icon="taxi" size="2x" class="mx-2"></mdb-icon>Delivery</button>
+    </div> 
+   
+  </div>
+    <div class="col-md container-fluid text-center"> 
+      <hr/>
+   <h4>Pick up times</h4>  
+   <ul> 
+     <li>Monday - Thursday:8:30AM - 9:30PM</li> 
+     <li>Friday - Saturday:8:00AM - 10:00PM</li> 
+     <li>Sunday:9:00AM - 9:30PM</li>
+     <li><a href="#"> Pickup Rules & Information</a></li>
+   </ul>
+   <hr/>
+   <h4> Delivery times</h4>
+<ul> 
+  <li>Monday - Saturday:12:00PM - 12:00AM</li>  
+  <li>Sunday:10:00AM - 11:00PM</li> 
+  <li><a (click)="deliveryModal.show()">Delivery Rules & Information</a></li>  
+  
+</ul>
+<div mdbModal #deliveryModal="mdbModal" class="modal fade" tabindex="-1" role="contentinfo" aria-labelledby="DeliveryModalLabel" aria-hidden="true"> 
+    <div class="modal-content"> 
+      <div class="modal-header"> 
+        <h5 class="modal-title">Delivery Information</h5> 
+        <button type="button" class="close pull-right" aria-label="Close" (click)="deliveryModal.hide()"> 
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+    <div class="modal-body"> 
+      <p> 
+        Extra fees based on distance
+      </p>
+
+    </div>
+
+    </div>
+  </div>
+    </div>
+  </div>
+
+</div> 
+    
